@@ -1,6 +1,6 @@
 <mxfile host="app.diagrams.net">
   <diagram name="Page-1" id="-YqvBdWR7zro55ob8_1u">
-    <mxGraphModel dx="808" dy="454" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+    <mxGraphModel dx="1414" dy="795" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -25,6 +25,9 @@
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="IQe30unK_AcWwb2UXMVU-2" edge="1" parent="1" source="hUDn5ZNKDxH-Q9J3WyCt-2" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="IQe30unK_AcWwb2UXMVU-1" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="bphd-XHS044pXj_6YrF3-8" edge="1" parent="1" source="hUDn5ZNKDxH-Q9J3WyCt-2" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=1;exitDx=0;exitDy=0;entryX=0.25;entryY=0;entryDx=0;entryDy=0;" target="bphd-XHS044pXj_6YrF3-4">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="hUDn5ZNKDxH-Q9J3WyCt-2" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="&lt;strong style=&quot;box-sizing: border-box; font-weight: bold; scrollbar-color: rgb(95, 99, 104) rgb(49, 54, 60); color: rgb(220, 233, 249); font-family: aktiv-grotesk, sans-serif; font-size: 14px; text-align: start; background-color: rgb(32, 36, 38);&quot;&gt;Business Logic Layer (Models):&lt;/strong&gt;" vertex="1">
@@ -126,7 +129,7 @@
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="bphd-XHS044pXj_6YrF3-4" parent="1" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" value="Create_User" vertex="1">
-          <mxGeometry height="162" width="160" x="290" y="389.73" as="geometry" />
+          <mxGeometry height="162" width="160" x="580" y="400" as="geometry" />
         </mxCell>
         <mxCell id="bphd-XHS044pXj_6YrF3-5" parent="bphd-XHS044pXj_6YrF3-4" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" value="+ first_name: string&lt;div&gt;+ last_name: string&lt;/div&gt;&lt;div&gt;+ email: string&lt;/div&gt;&lt;div&gt;+ password: string&lt;/div&gt;" vertex="1">
           <mxGeometry height="84" width="160" y="26" as="geometry" />
@@ -144,13 +147,13 @@
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="IQe30unK_AcWwb2UXMVU-1" parent="1" style="whiteSpace=wrap;html=1;rounded=0;" value="User" vertex="1">
-          <mxGeometry height="60" width="120" x="402.5" y="390.00500000000005" as="geometry" />
+          <mxGeometry height="60" width="120" x="335" y="387.99500000000006" as="geometry" />
         </mxCell>
         <mxCell id="IQe30unK_AcWwb2UXMVU-3" parent="1" style="whiteSpace=wrap;html=1;rounded=0;" value="Reviews" vertex="1">
-          <mxGeometry height="60" width="120" x="335" y="505.4550000000001" as="geometry" />
+          <mxGeometry height="60" width="120" x="280" y="505.4550000000001" as="geometry" />
         </mxCell>
         <mxCell id="IQe30unK_AcWwb2UXMVU-6" parent="1" style="whiteSpace=wrap;html=1;rounded=0;" value="Viewing Amenities" vertex="1">
-          <mxGeometry height="60" width="120" x="480" y="502.735" as="geometry" />
+          <mxGeometry height="60" width="120" x="415" y="505.45500000000004" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>

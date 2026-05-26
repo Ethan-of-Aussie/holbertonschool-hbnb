@@ -1,6 +1,6 @@
 <mxfile host="app.diagrams.net">
   <diagram name="Page-1" id="-YqvBdWR7zro55ob8_1u">
-    <mxGraphModel dx="1414" dy="795" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+    <mxGraphModel dx="2020" dy="1136" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -168,6 +168,15 @@
         </mxCell>
         <mxCell id="bphd-XHS044pXj_6YrF3-11" parent="1" style="rounded=0;whiteSpace=wrap;html=1;align=center;fillColor=#fff2cc;strokeColor=#d6b656;" value="&lt;div style=&quot;&quot;&gt;&lt;font color=&quot;#1d2836&quot; face=&quot;aktiv-grotesk, sans-serif&quot;&gt;&lt;span style=&quot;font-size: 14px; background-color: rgb(203, 207, 209);&quot;&gt;&lt;b&gt;Name&lt;/b&gt;&lt;/span&gt;&lt;/font&gt;&lt;/div&gt;&lt;div style=&quot;&quot;&gt;&lt;font color=&quot;#1d2836&quot; face=&quot;aktiv-grotesk, sans-serif&quot;&gt;&lt;span style=&quot;font-size: 14px; background-color: rgb(203, 207, 209);&quot;&gt;&lt;b&gt;Description&lt;/b&gt;&lt;/span&gt;&lt;/font&gt;&lt;/div&gt;" vertex="1">
           <mxGeometry height="65.46" width="120" x="560" y="930" as="geometry" />
+        </mxCell>
+        <mxCell id="bphd-XHS044pXj_6YrF3-17" parent="1" style="shape=folder;fontStyle=1;spacingTop=10;tabWidth=40;tabHeight=14;tabPosition=left;html=1;whiteSpace=wrap;" value="Presentation Layer" vertex="1">
+          <mxGeometry height="310" width="620" x="150" y="1270" as="geometry" />
+        </mxCell>
+        <mxCell id="bphd-XHS044pXj_6YrF3-19" parent="1" style="shape=folder;fontStyle=1;spacingTop=10;tabWidth=40;tabHeight=14;tabPosition=left;html=1;whiteSpace=wrap;" value="Business Layer" vertex="1">
+          <mxGeometry height="310" width="620" x="150" y="1700" as="geometry" />
+        </mxCell>
+        <mxCell id="bphd-XHS044pXj_6YrF3-20" parent="1" style="shape=folder;fontStyle=1;spacingTop=10;tabWidth=40;tabHeight=14;tabPosition=left;html=1;whiteSpace=wrap;" value="Persistence Layer" vertex="1">
+          <mxGeometry height="310" width="620" x="150" y="2110" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>

@@ -228,7 +228,7 @@
         <mxCell id="oMLWTCMjyaFDdx6GEP5y-3" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="1" vertex="1">
           <mxGeometry height="21" width="35" x="282.5" y="-180" as="geometry" />
         </mxCell>
-        <mxCell id="oMLWTCMjyaFDdx6GEP5y-4" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="1..*" vertex="1">
+        <mxCell id="oMLWTCMjyaFDdx6GEP5y-4" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="0..*" vertex="1">
           <mxGeometry height="30" width="60" x="300" y="-73" as="geometry" />
         </mxCell>
         <mxCell id="G2LW6t1l3yR2lz-vioTT-3" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="Business Logic Layer" vertex="1">

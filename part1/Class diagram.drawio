@@ -208,10 +208,10 @@
           <mxGeometry height="30" width="60" x="660" y="-410" as="geometry" />
         </mxCell>
         <mxCell id="SmUk0WE4a00IHk_lRsVr-1" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="0..*" vertex="1">
-          <mxGeometry height="30" width="60" x="480" y="-276" as="geometry" />
+          <mxGeometry height="30" width="60" x="920" y="-396" as="geometry" />
         </mxCell>
         <mxCell id="SmUk0WE4a00IHk_lRsVr-2" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="1" vertex="1">
-          <mxGeometry height="30" width="60" x="910" y="-396" as="geometry" />
+          <mxGeometry height="30" width="60" x="480" y="-280" as="geometry" />
         </mxCell>
         <mxCell id="oMLWTCMjyaFDdx6GEP5y-1" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="1" vertex="1">
           <mxGeometry height="21" width="35" x="370" y="-110" as="geometry" />

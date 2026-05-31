@@ -1,6 +1,6 @@
 <mxfile host="app.diagrams.net">
   <diagram name="Page-1" id="2KrW7VEhyqmw7Nx4Ttr-">
-    <mxGraphModel dx="1651" dy="795" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+    <mxGraphModel dx="926" dy="519" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -68,6 +68,9 @@
         </mxCell>
         <mxCell id="WgZE8rlp9okLk8PS5iAP-1" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=light-dark(#FFFF88,#FFFF63);strokeColor=#36393d;fontColor=light-dark(#000000,#000000);" value="Will help user to select listed properties or list properties if user is host" vertex="1">
           <mxGeometry height="200.88" width="120" x="600" y="80" as="geometry" />
+        </mxCell>
+        <mxCell id="jcnPVMmyGXToek09mdS7-1" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="The Facade Pattern Abstracts all method actions from API" vertex="1">
+          <mxGeometry height="60" width="120" x="600" y="400" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>

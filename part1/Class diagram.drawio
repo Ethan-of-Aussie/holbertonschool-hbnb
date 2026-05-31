@@ -1,6 +1,6 @@
 <mxfile host="app.diagrams.net">
   <diagram id="ltbA6WWBp3LRaSq-5ORm" name="Page-1">
-    <mxGraphModel dx="1575" dy="1938" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+    <mxGraphModel dx="2259" dy="1890" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -91,7 +91,7 @@
         <mxCell id="TRXBdDGxTs-NISdQ8IEX-23" parent="1" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" value="Amenities" vertex="1">
           <mxGeometry height="160" width="160" x="760" y="10" as="geometry" />
         </mxCell>
-        <mxCell id="TRXBdDGxTs-NISdQ8IEX-24" parent="TRXBdDGxTs-NISdQ8IEX-23" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" value="amenty_list: string list" vertex="1">
+        <mxCell id="TRXBdDGxTs-NISdQ8IEX-24" parent="TRXBdDGxTs-NISdQ8IEX-23" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" value="amenity_list: string list" vertex="1">
           <mxGeometry height="26" width="160" y="26" as="geometry" />
         </mxCell>
         <mxCell id="TRXBdDGxTs-NISdQ8IEX-25" parent="TRXBdDGxTs-NISdQ8IEX-23" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;" value="" vertex="1">
@@ -261,6 +261,12 @@
         </mxCell>
         <mxCell id="Qc-xl6jv6DDGC1pgQnW8-33" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="use" vertex="1">
           <mxGeometry height="30" width="60" x="589" y="-330" as="geometry" />
+        </mxCell>
+        <mxCell id="NVnYnh1C7RbwFzcAmvRw-9" edge="1" parent="1" source="NVnYnh1C7RbwFzcAmvRw-8" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" target="TRXBdDGxTs-NISdQ8IEX-23">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="NVnYnh1C7RbwFzcAmvRw-8" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=light-dark(#000000,#FFF707);fontColor=light-dark(#000000,#000000);" value="Amenities represents the type of rooms and how many of those rooms they&#39;re are. Also includes items such as pools, spas/saunas etc.&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;Key attributes are amenity_list.&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;Method&#39;s include:&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(0, 0, 0)); text-align: left;&quot;&gt;add_amenity()&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;font style=&quot;color: light-dark(rgb(0, 0, 0), rgb(0, 0, 0));&quot;&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; remove_amenity()&lt;/font&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;font style=&quot;color: light-dark(rgb(0, 0, 0), rgb(0, 0, 0));&quot;&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;display_amenities()&lt;/font&gt;&lt;/div&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;font style=&quot;color: light-dark(rgb(0, 0, 0), rgb(0, 0, 0));&quot;&gt;&lt;br&gt;&lt;/font&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;Method&#39;s Description:&lt;br&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;Amentities can be removed,&amp;nbsp;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;&lt;br&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;added and displayed on the&amp;nbsp;&lt;br&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;properties page.&lt;br&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="240" width="200" x="740" y="180" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>

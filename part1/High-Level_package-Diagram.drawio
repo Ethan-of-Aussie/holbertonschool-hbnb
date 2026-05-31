@@ -57,6 +57,15 @@
         <mxCell id="vZHe2jEZJALmbnLdjFB--105" parent="1" style="whiteSpace=wrap;html=1;rounded=0;" value="User" vertex="1">
           <mxGeometry height="17.92" width="65" x="442.5" y="248.39" as="geometry" />
         </mxCell>
+        <mxCell id="WIsYPLuYnzwIEppj4hiX-1" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=light-dark(#FFFF88,#FFFF63);strokeColor=#36393d;fontColor=light-dark(#000000,#000000);" value="User sends API-Calls through a Client_Interface&lt;br&gt;for-which is sent through Business Logic Layer&amp;nbsp;" vertex="1">
+          <mxGeometry height="200.88" width="120" x="270" y="230" as="geometry" />
+        </mxCell>
+        <mxCell id="WIsYPLuYnzwIEppj4hiX-2" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=light-dark(#FFFF88,#FFFF63);strokeColor=#36393d;fontColor=light-dark(#000000,#000000);" value="In Business Logic Layer, Classes are currently abstracted with &#39;ModelClasses&#39;" vertex="1">
+          <mxGeometry height="200.88" width="120" x="792.5" y="97.51" as="geometry" />
+        </mxCell>
+        <mxCell id="WIsYPLuYnzwIEppj4hiX-3" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=light-dark(#FFFF88,#FFFF63);strokeColor=#36393d;fontColor=light-dark(#000000,#000000);" value="Classes and their methods from BLL,&lt;br&gt;send through actions into the Persistence Layer.&lt;br&gt;Persistence Layer contains the Database where private and protected data are kept. sent, removed, edited and returned" vertex="1">
+          <mxGeometry height="200.88" width="120" x="1170" y="90" as="geometry" />
+        </mxCell>
       </root>
     </mxGraphModel>
   </diagram>

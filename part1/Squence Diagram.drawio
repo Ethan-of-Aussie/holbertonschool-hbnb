@@ -1,6 +1,6 @@
 <mxfile host="app.diagrams.net" agent="5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/109.0.0.0 Safari/537.36">
   <diagram name="Page-1" id="2YBvvXClWsGukQMizWep">
-    <mxGraphModel dx="2511" dy="2096" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+    <mxGraphModel dx="5479" dy="3694" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -1046,6 +1046,9 @@
         </mxCell>
         <mxCell id="hdZgwrDiKc9ZDYHE6M_5-4" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=light-dark(#FFFF88,#FFFF63);strokeColor=#36393d;fontColor=light-dark(#000000,#000000);" value="&lt;span style=&quot;color: rgb(255, 255, 255);&quot;&gt;The purpose of this diagram is to describe the process of fetching a list of places based on user criteria (might be location, cost, availability (STC)).&amp;nbsp;&lt;/span&gt;&lt;br style=&quot;color: rgb(255, 255, 255);&quot;&gt;&lt;br style=&quot;color: rgb(255, 255, 255);&quot;&gt;&lt;span style=&quot;color: rgb(255, 255, 255);&quot;&gt;A user will initiate a search of places in the website. This request will be passed on&amp;nbsp; by the API to the backend where the request is first validated (spelling check, user status(if customer?), specifications).&lt;/span&gt;&lt;br style=&quot;color: rgb(255, 255, 255);&quot;&gt;&lt;span style=&quot;color: rgb(255, 255, 255);&quot;&gt;After validation, the backend processes the request which is then passed on to the database where a search is initiated and the resulting list is returned to the backend. The backend will inform the API of the success/failure of the search which upon success the list is passed to the user.&lt;/span&gt;" vertex="1">
           <mxGeometry height="330" width="220" x="200" y="412.5" as="geometry" />
+        </mxCell>
+        <mxCell id="7vSiNqa5pUVo_oN3f7ln-2" parent="1" style="rounded=0;whiteSpace=wrap;html=1;strokeColor=light-dark(#000000,#F1FF0F);fillColor=light-dark(#FFFFFF,#F1FF0B);fontColor=light-dark(#000000,#000000);" value="If user is a host, they can Create a listing of their place, the information will be validated(Checked for errors)&lt;div&gt;than the request will be processed through methods, than passed to database. Data will be saved, confirmed if saved and backend will return response to API. API will return a success if data was saved for the property becoming valid.&amp;nbsp;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="197.5" width="190" x="370" y="-285" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>

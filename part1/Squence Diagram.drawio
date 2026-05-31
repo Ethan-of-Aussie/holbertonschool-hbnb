@@ -1,6 +1,6 @@
 <mxfile host="app.diagrams.net" agent="5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/109.0.0.0 Safari/537.36">
   <diagram name="Page-1" id="2YBvvXClWsGukQMizWep">
-    <mxGraphModel dx="3203" dy="2512" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+    <mxGraphModel dx="2393" dy="1965" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -1037,6 +1037,9 @@
         </mxCell>
         <mxCell id="TdW9oKKxsJU2AUWhq7uW-95" parent="1" style="shape=umlFrame;whiteSpace=wrap;html=1;pointerEvents=0;width=70;height=40;" value="Fetch List of Places" vertex="1">
           <mxGeometry height="55" width="155" x="580" y="480" as="geometry" />
+        </mxCell>
+        <mxCell id="UWNoiYovL3Yv8UeEzB46-1" parent="1" style="rounded=0;whiteSpace=wrap;html=1;strokeColor=light-dark(#000000,#F1FF0F);fillColor=light-dark(#FFFFFF,#F1FF0B);" value="" vertex="1">
+          <mxGeometry height="170" width="120" x="490" y="-1020" as="geometry" />
         </mxCell>
         <mxCell id="hdZgwrDiKc9ZDYHE6M_5-1" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=light-dark(#FFFF88,#FFFF63);strokeColor=#36393d;fontColor=light-dark(#000000,#000000);fontSize=30;" value="&lt;div&gt;Explanatory Notes:&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;A brief description of each API call, outlining the key steps involved and the purpose of the sequence diagram.&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;Explanation of the flow of interactions, highlighting how each layer contributes to fulfilling the API request.&lt;/div&gt;" vertex="1">
           <mxGeometry height="520" width="650" x="1430" y="-875" as="geometry" />

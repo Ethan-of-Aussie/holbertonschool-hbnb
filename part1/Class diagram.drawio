@@ -1,11 +1,11 @@
 <mxfile host="app.diagrams.net">
   <diagram id="ltbA6WWBp3LRaSq-5ORm" name="Page-1">
-    <mxGraphModel dx="1539" dy="1896" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+    <mxGraphModel dx="1575" dy="1938" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
         <mxCell id="G2LW6t1l3yR2lz-vioTT-1" parent="1" style="shape=folder;fontStyle=1;spacingTop=10;tabWidth=140;tabHeight=40;tabPosition=left;html=1;whiteSpace=wrap;" value="" vertex="1">
-          <mxGeometry height="610" width="912" x="180" y="-450" as="geometry" />
+          <mxGeometry height="680" width="912" x="180" y="-450" as="geometry" />
         </mxCell>
         <mxCell id="Qc-xl6jv6DDGC1pgQnW8-32" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" value="if host" vertex="1">
           <mxGeometry height="30" width="60" x="540" y="-260" as="geometry" />
@@ -89,7 +89,7 @@
           <mxGeometry height="50" width="250" x="152" y="1140" as="geometry" />
         </mxCell>
         <mxCell id="TRXBdDGxTs-NISdQ8IEX-23" parent="1" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" value="Amenities" vertex="1">
-          <mxGeometry height="160" width="160" x="760" y="-59" as="geometry" />
+          <mxGeometry height="160" width="160" x="760" y="10" as="geometry" />
         </mxCell>
         <mxCell id="TRXBdDGxTs-NISdQ8IEX-24" parent="TRXBdDGxTs-NISdQ8IEX-23" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" value="amenty_list: string list" vertex="1">
           <mxGeometry height="26" width="160" y="26" as="geometry" />
@@ -107,7 +107,7 @@
           <mxGeometry height="66" width="160" y="94" as="geometry" />
         </mxCell>
         <mxCell id="TRXBdDGxTs-NISdQ8IEX-27" parent="1" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" value="Place" vertex="1">
-          <mxGeometry height="324" width="230" x="760" y="-366" as="geometry" />
+          <mxGeometry height="340" width="230" x="760" y="-366" as="geometry" />
         </mxCell>
         <mxCell id="Qc-xl6jv6DDGC1pgQnW8-40" parent="TRXBdDGxTs-NISdQ8IEX-27" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" value="place_id: int" vertex="1">
           <mxGeometry height="26" width="230" y="26" as="geometry" />
@@ -152,7 +152,7 @@
           <mxGeometry height="8" width="230" y="256" as="geometry" />
         </mxCell>
         <mxCell id="Qc-xl6jv6DDGC1pgQnW8-19" parent="TRXBdDGxTs-NISdQ8IEX-27" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" value="&lt;div&gt;+view_list()&lt;/div&gt;+booking()&lt;div&gt;+costs()&lt;/div&gt;" vertex="1">
-          <mxGeometry height="60" width="230" y="264" as="geometry" />
+          <mxGeometry height="76" width="230" y="264" as="geometry" />
         </mxCell>
         <mxCell id="TRXBdDGxTs-NISdQ8IEX-35" parent="1" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" value="Comments" vertex="1">
           <mxGeometry height="154" width="160" x="450" y="-60" as="geometry" />
@@ -203,8 +203,7 @@
           <mxGeometry relative="1" as="geometry">
             <Array as="points">
               <mxPoint x="710" y="-259" />
-              <mxPoint x="710" y="-50" />
-              <mxPoint x="761" y="-50" />
+              <mxPoint x="710" y="21" />
             </Array>
             <mxPoint x="870" y="-250" as="sourcePoint" />
             <mxPoint x="740" y="-70" as="targetPoint" />

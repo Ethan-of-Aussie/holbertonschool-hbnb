@@ -1,6 +1,6 @@
 <mxfile host="app.diagrams.net">
   <diagram name="Page-1" id="4TK_IxDSeI-HzrAVb5h_">
-    <mxGraphModel dx="1117" dy="626" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+    <mxGraphModel dx="1620" dy="908" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -62,7 +62,7 @@
           <mxGeometry height="314.18" width="710" x="68.21000000000001" y="2620" as="geometry" />
         </mxCell>
         <mxCell id="g8OnkpdD9VU2AHoXN7dE-7" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="&lt;span style=&quot;color: rgb(0, 0, 0);&quot;&gt;If user is a host, they can Create a listing of their place, the information will be validated(Checked for errors)&lt;/span&gt;&lt;div style=&quot;color: rgb(0, 0, 0);&quot;&gt;than the request will be processed through methods, than passed to database. Data will be saved, confirmed if saved and backend will return response to API. API will return a success if data was saved for the property becoming valid.&amp;nbsp;&lt;/div&gt;" vertex="1">
-          <mxGeometry height="30" width="392.49" x="237.51" y="2970" as="geometry" />
+          <mxGeometry height="30" width="392.49" x="211.26" y="2970" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>

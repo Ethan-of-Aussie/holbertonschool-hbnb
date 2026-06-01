@@ -1,6 +1,6 @@
 <mxfile host="app.diagrams.net">
   <diagram id="ltbA6WWBp3LRaSq-5ORm" name="Page-1">
-    <mxGraphModel dx="1539" dy="1948" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+    <mxGraphModel dx="2470" dy="2008" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -255,7 +255,7 @@
         <mxCell id="W2vF0aZWDMr8ijiC13AB-3" edge="1" parent="1" source="W2vF0aZWDMr8ijiC13AB-1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" target="Qc-xl6jv6DDGC1pgQnW8-1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="W2vF0aZWDMr8ijiC13AB-1" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=light-dark(#FFFF88,#FFFF63);strokeColor=#36393d;fontColor=light-dark(#000000,#000000);" value="&lt;div&gt;Review represents the rating given by those that have stayed at the Place.&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;Key attributes:&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;text-align: left;&quot;&gt;&lt;font style=&quot;color: light-dark(rgb(0, 0, 0), rgb(0, 0, 0));&quot;&gt;+ review: string&lt;/font&gt;&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;Method:&lt;/div&gt;&lt;div&gt;+ validate_review()&lt;/div&gt;&lt;div&gt;+ submit_review()&amp;nbsp;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;Relatioship:&lt;/div&gt;&lt;div&gt;Bi-association with Place, cant have no ability to review a place.&lt;br&gt;0 to many instances Place has of Review.&lt;/div&gt;&lt;div&gt;Review has 1 instance of Place.&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;" vertex="1">
+        <mxCell id="W2vF0aZWDMr8ijiC13AB-1" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=light-dark(#FFFF88,#FFFF63);strokeColor=#36393d;fontColor=light-dark(#000000,#000000);" value="&lt;div&gt;Review represents the rating given by those that have stayed at the Place.&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;Key attributes:&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;text-align: left;&quot;&gt;&lt;font style=&quot;color: light-dark(rgb(0, 0, 0), rgb(0, 0, 0));&quot;&gt;+ review: string&lt;/font&gt;&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;Method:&lt;/div&gt;&lt;div&gt;+ validate_review()&lt;/div&gt;&lt;div&gt;+ submit_review()&amp;nbsp;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;Relatioship:&lt;/div&gt;&lt;div&gt;Bi-association with Place, cant have no ability to review a place.&lt;br&gt;0 to many instances Place has of Review.&lt;/div&gt;&lt;div&gt;Review has 1 instance of Place.&lt;/div&gt;&lt;div&gt;Dependent on User, cant commit reviews without user.&amp;nbsp;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;" vertex="1">
           <mxGeometry height="250" width="230" x="185" y="240" as="geometry" />
         </mxCell>
         <mxCell id="tQbxxfflCs40XiXrKMfo-1" edge="1" parent="1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=none;endFill=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="TRXBdDGxTs-NISdQ8IEX-30">
@@ -268,7 +268,7 @@
             <mxPoint x="710" y="-80" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="sTjTZyDY8kwwTlhZItui-1" edge="1" parent="1" source="TRXBdDGxTs-NISdQ8IEX-12" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.015;exitY=1.016;exitDx=0;exitDy=0;entryX=0.25;entryY=0;entryDx=0;entryDy=0;dashed=1;exitPerimeter=0;" target="Qc-xl6jv6DDGC1pgQnW8-1">
+        <mxCell id="sTjTZyDY8kwwTlhZItui-1" edge="1" parent="1" source="Qc-xl6jv6DDGC1pgQnW8-1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=-0.013;entryY=1.007;entryDx=0;entryDy=0;dashed=1;entryPerimeter=0;" target="TRXBdDGxTs-NISdQ8IEX-12">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
       </root>

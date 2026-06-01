@@ -1,6 +1,6 @@
 <mxfile host="app.diagrams.net">
   <diagram name="Page-1" id="2KrW7VEhyqmw7Nx4Ttr-">
-    <mxGraphModel dx="1712" dy="625" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+    <mxGraphModel dx="1377" dy="947" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -74,6 +74,9 @@
         </mxCell>
         <mxCell id="3AgvAKh3npFNZkdtQLno-1" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="The package diagram has been divided to represent three layers:&lt;br&gt;&lt;br&gt;Presentation Layer&lt;div&gt;This is basically the UI layer which displays the website to the user. This layer is responsible for handling the interactions between users have with the HBnB system. The presentation layer being the front end focuses on making it easier for users to communicate with the backend and database through easy to use interfaces.&lt;br&gt;Layer with most basic methods&lt;br&gt;&lt;br&gt;Business Logic Layer&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;Persistence Layer:&lt;/div&gt;&lt;div&gt;This layer is the database layer, where storage of information and data retrieval occurs, protected by the business logic layer. It also will be the layer that provides simple operations such as saving, updating, deleting and retrieving of objects to and from the Business layer and will hide its internal logic from the Business layer, but will be able to communicate information needed for operations.&lt;/div&gt;&lt;/div&gt;" vertex="1">
           <mxGeometry height="303" width="530" x="270" y="460" as="geometry" />
+        </mxCell>
+        <mxCell id="W_o3C3PsjH2Ao98SipCb-1" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="Business Logic Layer&lt;div&gt;Core business concept and define what are components needed for the business to operate&lt;/div&gt;&lt;div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="60" width="530" x="250" y="800" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>

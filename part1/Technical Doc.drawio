@@ -1,6 +1,6 @@
 <mxfile host="app.diagrams.net">
   <diagram name="Page-1" id="4TK_IxDSeI-HzrAVb5h_">
-    <mxGraphModel dx="1705" dy="956" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+    <mxGraphModel dx="2945" dy="1651" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -38,7 +38,7 @@
           <mxGeometry height="80" width="729" x="57" y="1730" as="geometry" />
         </mxCell>
         <mxCell id="g8OnkpdD9VU2AHoXN7dE-2" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;rounded=0;fontSize=27;" value="&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;3.Sequence Diagram&lt;/span&gt;" vertex="1">
-          <mxGeometry height="30" width="272" x="48" y="2060" as="geometry" />
+          <mxGeometry height="30" width="272" x="57" y="2060" as="geometry" />
         </mxCell>
         <mxCell id="vumbYwMkXRfTNx7zPgPV-1" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;rounded=0;" value="User:&lt;div&gt;&lt;br&gt;&lt;div&gt;&lt;span style=&quot;text-align: center;&quot;&gt;The User class represents the description of the users interacting with the presentation layer of the HBnB system.&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;Place:&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;div&gt;The Place class represents the description of the properties listed by the host on the HBnB system.&lt;/div&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;Review:&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;div&gt;The Review class represents the reviews and ratings of different properties instantiated from Place by User on the HBnB system.&lt;/div&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;Amenities:&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;div&gt;The Amenities class represents the room description of the properties instantiated by Place.&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;" vertex="1">
           <mxGeometry height="260" width="683" x="57" y="1790" as="geometry" />
@@ -68,10 +68,10 @@
           <mxGeometry height="220" width="700" x="70" y="3920" as="geometry" />
         </mxCell>
         <mxCell id="g8OnkpdD9VU2AHoXN7dE-12" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;rounded=0;fontColor=light-dark(#000000,#FFFFFF);whiteSpace=wrap;labelBackgroundColor=none;fontSize=12;" value="&lt;font face=&quot;gg sans, Noto Sans, Helvetica Neue, Helvetica, Arial, sans-serif&quot;&gt;&lt;span style=&quot;white-space-collapse: break-spaces;&quot;&gt;The sequence diagrams is showing how the API is connecting the user and the backend while also demonstrating how the backend is handling database interaction.&lt;/span&gt;&lt;/font&gt;" vertex="1">
-          <mxGeometry height="50" width="712" x="51.6" y="2090" as="geometry" />
+          <mxGeometry height="50" width="712" x="61.78" y="2090" as="geometry" />
         </mxCell>
         <mxCell id="g8OnkpdD9VU2AHoXN7dE-13" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;rounded=0;fontColor=light-dark(#000000,#FFFFFF);whiteSpace=wrap;labelBackgroundColor=none;fontSize=12;" value="&lt;font face=&quot;gg sans, Noto Sans, Helvetica Neue, Helvetica, Arial, sans-serif&quot;&gt;&lt;span style=&quot;white-space-collapse: break-spaces;&quot;&gt;Here is a list of diagrams now!&lt;/span&gt;&lt;/font&gt;" vertex="1">
-          <mxGeometry height="50" width="712" x="49.99999999999999" y="2130" as="geometry" />
+          <mxGeometry height="50" width="712" x="60.99999999999999" y="2140" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>

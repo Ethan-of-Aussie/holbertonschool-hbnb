@@ -223,7 +223,7 @@
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="xa9CocleF6afOvuUqr7u-1" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=light-dark(#FFFF88,#FFFF63);strokeColor=#36393d;fontColor=light-dark(#000000,#000000);" value="The User class represents the user of hBnB. Depending on their purpose, user can be either only customer or customer/host&lt;br&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;Role :&lt;br&gt;Customer = Search/View/Book properties&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;Host =&amp;nbsp;&lt;br&gt;Search/View/Book/List properties&lt;br&gt;&lt;br&gt;Key attributes:&lt;br&gt;is_host&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;Key method:&lt;br&gt;+ register_user()&lt;/div&gt;&lt;div&gt;+ validate_user()&lt;/div&gt;&lt;div&gt;+ update_user()&lt;br&gt;&lt;br&gt;Explaination of relationship:&lt;br&gt;Place has usage(dependency) relationship with user since the Place class requires the User class to perform its functionality. Place cannot exist without user(host listing properties)&lt;/div&gt;" vertex="1">
-          <mxGeometry height="380" width="220" x="-72" y="-393" as="geometry" />
+          <mxGeometry height="403" width="220" x="-72" y="-393" as="geometry" />
         </mxCell>
         <mxCell id="NVnYnh1C7RbwFzcAmvRw-14" edge="1" parent="1" source="xa9CocleF6afOvuUqr7u-3" style="edgeStyle=entityRelationEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=1.002;entryY=-0.077;entryDx=0;entryDy=0;entryPerimeter=0;curved=1;" target="TRXBdDGxTs-NISdQ8IEX-30">
           <mxGeometry relative="1" as="geometry" />

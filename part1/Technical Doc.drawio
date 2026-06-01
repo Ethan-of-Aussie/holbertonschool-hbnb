@@ -1,6 +1,6 @@
 <mxfile host="app.diagrams.net">
   <diagram name="Page-1" id="4TK_IxDSeI-HzrAVb5h_">
-    <mxGraphModel dx="1664" dy="683" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+    <mxGraphModel dx="689" dy="882" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -34,8 +34,17 @@
         <mxCell id="BRKFx2_CN96X1WLmFzoN-2" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;fontSize=27;" value="&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255)); text-align: left;&quot;&gt;2. Class Diagram&lt;/span&gt;" vertex="1">
           <mxGeometry height="30" width="250" x="30" y="1140" as="geometry" />
         </mxCell>
-        <mxCell id="ZfJwDptoVW3bVI8tmmg0-1" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="The Place class represents the description of the properties listed by the host on the HBnB system" vertex="1">
+        <mxCell id="ZfJwDptoVW3bVI8tmmg0-1" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="The User class represents the description of the users interacting with the presentation layer of the HBnB system." vertex="1">
           <mxGeometry height="30" width="739" x="52" y="1910" as="geometry" />
+        </mxCell>
+        <mxCell id="ZfJwDptoVW3bVI8tmmg0-2" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="The Place class represents the description of the properties listed by the host on the HBnB system." vertex="1">
+          <mxGeometry height="30" width="739" x="56.51" y="1960" as="geometry" />
+        </mxCell>
+        <mxCell id="ZfJwDptoVW3bVI8tmmg0-3" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="The Review class represents the reviews and ratings of different properties instantiated from Place by User on the HBnB system." vertex="1">
+          <mxGeometry height="30" width="739" x="55.599999999999994" y="2010" as="geometry" />
+        </mxCell>
+        <mxCell id="ZfJwDptoVW3bVI8tmmg0-4" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="The Amenities class represents the room description of the properties instantiated by Place." vertex="1">
+          <mxGeometry height="30" width="739" x="56.5" y="2050" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>

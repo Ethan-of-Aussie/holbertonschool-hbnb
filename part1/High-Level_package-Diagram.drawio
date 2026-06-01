@@ -1,6 +1,6 @@
 <mxfile host="app.diagrams.net">
   <diagram name="Page-1" id="2KrW7VEhyqmw7Nx4Ttr-">
-    <mxGraphModel dx="599" dy="767" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+    <mxGraphModel dx="1712" dy="625" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -61,7 +61,7 @@
           <mxGeometry height="200.88" width="120" x="270" y="230" as="geometry" />
         </mxCell>
         <mxCell id="WIsYPLuYnzwIEppj4hiX-2" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=light-dark(#FFFF88,#FFFF63);strokeColor=#36393d;fontColor=light-dark(#000000,#000000);" value="In Business Logic Layer, Classes are currently abstracted with &#39;ModelClasses&#39;" vertex="1">
-          <mxGeometry height="200.88" width="120" x="792.5" y="97.51" as="geometry" />
+          <mxGeometry height="200.88" width="120" x="792.5" y="90" as="geometry" />
         </mxCell>
         <mxCell id="WIsYPLuYnzwIEppj4hiX-3" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=light-dark(#FFFF88,#FFFF63);strokeColor=#36393d;fontColor=light-dark(#000000,#000000);" value="Classes and their methods from BLL,&lt;br&gt;send through actions into the Persistence Layer.&lt;br&gt;Persistence Layer contains the Database where private and protected data are kept. sent, removed, edited and returned" vertex="1">
           <mxGeometry height="200.88" width="120" x="1170" y="90" as="geometry" />
@@ -72,7 +72,7 @@
         <mxCell id="jcnPVMmyGXToek09mdS7-1" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="The Facade Pattern Abstracts all method actions from API" vertex="1">
           <mxGeometry height="60" width="120" x="600" y="400" as="geometry" />
         </mxCell>
-        <mxCell id="3AgvAKh3npFNZkdtQLno-1" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="The package diagram has been divided to represent three layers:&lt;br&gt;&lt;br&gt;Presentation Layer&lt;div&gt;This is the UI layer which displays the website to the user and is responsible for handling the interactions between users and the HBnB system. The presentation layer, being the front end client interface focuses on making it easier for users to communicate with the backend and database through easy to use interfaces, we call this the Facade Pattern. The actions of the users are communicated to the backend with the help of an API cal&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;l.&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;Business Logic Layer&lt;div&gt;This is the layer which contains the bulk of the website&#39;s functionality and logic. Whatever action taken by the user in the presentation layer is being acted on in the business logic layer. This layer contains the majority of our classes that has been illustrated in the upcoming class diagram.&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;Persistence Layer&lt;br&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;" vertex="1">
+        <mxCell id="3AgvAKh3npFNZkdtQLno-1" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="The package diagram has been divided to represent three layers:&lt;br&gt;&lt;br&gt;Presentation Layer&lt;div&gt;This is basically the UI layer which displays the website to the user. This layer is responsible for handling the interactions between users have with the HBnB system. The presentation layer being the front end focuses on making it easier for users to communicate with the backend and database through easy to use interfaces.&lt;br&gt;Layer with most basic methods&lt;br&gt;&lt;br&gt;Business Logic Layer&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;Persistence Layer:&lt;/div&gt;&lt;div&gt;This layer is the database layer, where storage of information and data retrieval occurs, protected by the business logic layer. It also will be the layer that provides simple operations such as saving, updating, deleting and retrieving of objects to and from the Business layer and will hide its internal logic from the Business layer, but will be able to communicate information needed for operations.&lt;/div&gt;&lt;/div&gt;" vertex="1">
           <mxGeometry height="303" width="530" x="270" y="460" as="geometry" />
         </mxCell>
       </root>

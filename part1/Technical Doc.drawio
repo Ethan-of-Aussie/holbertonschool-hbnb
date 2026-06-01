@@ -1,6 +1,6 @@
 <mxfile host="app.diagrams.net">
   <diagram name="Page-1" id="4TK_IxDSeI-HzrAVb5h_">
-    <mxGraphModel dx="2945" dy="1651" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+    <mxGraphModel dx="3600" dy="2018" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -48,6 +48,9 @@
         </mxCell>
         <mxCell id="ZfJwDptoVW3bVI8tmmg0-4" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;rounded=0;" value="The Amenities class represents the room description of the properties instantiated by Place." vertex="1">
           <mxGeometry height="30" width="739" x="56" y="1900" as="geometry" />
+        </mxCell>
+        <mxCell id="g8OnkpdD9VU2AHoXN7dE-2" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;rounded=0;fontSize=27;" value="&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;3.Sequence Diagram&lt;/span&gt;" vertex="1">
+          <mxGeometry height="30" width="272" x="48" y="1980" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>

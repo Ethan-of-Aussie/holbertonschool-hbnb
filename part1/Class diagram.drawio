@@ -1,22 +1,22 @@
 <mxfile host="app.diagrams.net">
   <diagram id="ltbA6WWBp3LRaSq-5ORm" name="Page-1">
-    <mxGraphModel dx="2225" dy="1861" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+    <mxGraphModel dx="3375" dy="2969" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
         <mxCell id="G2LW6t1l3yR2lz-vioTT-1" parent="1" style="shape=folder;fontStyle=1;spacingTop=10;tabWidth=140;tabHeight=40;tabPosition=left;html=1;whiteSpace=wrap;" value="" vertex="1">
-          <mxGeometry height="680" width="912" x="180" y="-450" as="geometry" />
+          <mxGeometry height="680" width="912" x="422" y="-865" as="geometry" />
         </mxCell>
         <mxCell id="Qc-xl6jv6DDGC1pgQnW8-32" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" value="if host" vertex="1">
-          <mxGeometry height="30" width="60" x="540" y="-200" as="geometry" />
+          <mxGeometry height="30" width="60" x="782" y="-615" as="geometry" />
         </mxCell>
         <mxCell id="Qc-xl6jv6DDGC1pgQnW8-29" edge="1" parent="1" source="Qc-xl6jv6DDGC1pgQnW8-33" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=none;endFill=0;dashed=1;startArrow=open;startFill=0;">
           <mxGeometry relative="1" as="geometry">
-            <mxPoint x="760" y="-215" as="targetPoint" />
+            <mxPoint x="1002" y="-630" as="targetPoint" />
           </mxGeometry>
         </mxCell>
         <mxCell id="TRXBdDGxTs-NISdQ8IEX-1" parent="1" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" value="User" vertex="1">
-          <mxGeometry height="240" width="160" x="325" y="-366" as="geometry" />
+          <mxGeometry height="240" width="160" x="567" y="-781" as="geometry" />
         </mxCell>
         <mxCell id="TRXBdDGxTs-NISdQ8IEX-2" parent="TRXBdDGxTs-NISdQ8IEX-1" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" value="+ first_name: string&lt;div&gt;&lt;br&gt;&lt;/div&gt;" vertex="1">
           <mxGeometry height="24" width="160" y="26" as="geometry" />
@@ -51,44 +51,8 @@
         <mxCell id="TRXBdDGxTs-NISdQ8IEX-12" parent="TRXBdDGxTs-NISdQ8IEX-1" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" value="&lt;div&gt;+register_user()&lt;/div&gt;&lt;div&gt;+validate_user()&lt;/div&gt;&lt;div&gt;+update_user()&lt;/div&gt;" vertex="1">
           <mxGeometry height="62" width="160" y="178" as="geometry" />
         </mxCell>
-        <mxCell id="TRXBdDGxTs-NISdQ8IEX-13" parent="1" style="shape=folder;fontStyle=1;spacingTop=10;tabWidth=270;tabHeight=70;tabPosition=left;html=1;whiteSpace=wrap;" value="&lt;pre style=&quot;box-sizing: border-box; overflow: auto; font-family: Menlo, Monaco, Consolas, &amp;quot;Courier New&amp;quot;, monospace; font-size: 13px; margin: 0px 0px 10px; line-height: 1.42857; color: rgb(220, 233, 249); word-break: break-all; overflow-wrap: break-word; border-width: 1px; border-style: solid; border-image: initial; scrollbar-color: rgb(95, 99, 104) rgb(49, 54, 60); font-weight: 400; text-align: start; padding: 10px !important; background-color: rgb(32, 36, 38) !important; border-color: rgb(114, 105, 91) !important; border-radius: 4px !important;&quot;&gt;&lt;code class=&quot;mermaid language-mermaid&quot; style=&quot;box-sizing: border-box; font-family: Menlo, Monaco, Consolas, &amp;quot;Courier New&amp;quot;, monospace; font-size: inherit; padding: 0px; border-radius: 0px; white-space: pre-wrap; scrollbar-color: rgb(95, 99, 104) rgb(49, 54, 60); background-color: transparent !important;&quot;&gt;classDiagram&lt;/code&gt;&lt;/pre&gt;" vertex="1">
-          <mxGeometry height="740" width="730" x="110" y="680" as="geometry" />
-        </mxCell>
-        <mxCell id="TRXBdDGxTs-NISdQ8IEX-14" edge="1" parent="1" source="TRXBdDGxTs-NISdQ8IEX-20" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="TRXBdDGxTs-NISdQ8IEX-17">
-          <mxGeometry relative="1" as="geometry" />
-        </mxCell>
-        <mxCell id="TRXBdDGxTs-NISdQ8IEX-15" parent="1" style="verticalAlign=top;align=left;overflow=fill;html=1;whiteSpace=wrap;" value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;&lt;i&gt;&amp;lt;&amp;lt;Interface&amp;gt;&amp;gt;&lt;/i&gt;&lt;br&gt;&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;&lt;span style=&quot;background-color: transparent; font-family: Menlo, Monaco, Consolas, &amp;quot;Courier New&amp;quot;, monospace; font-size: inherit; white-space: pre-wrap; color: rgb(220, 233, 249); --dm-inline-bgcolor: transparent;&quot; data-dm-inline-bgcolor=&quot;&quot;&gt;Presentation Layer&lt;/span&gt;&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;&amp;nbsp;+ServiceAPI&lt;br&gt;+ClientInterface&lt;/p&gt;" vertex="1">
-          <mxGeometry height="60" width="190" x="180" y="770" as="geometry" />
-        </mxCell>
-        <mxCell id="TRXBdDGxTs-NISdQ8IEX-16" edge="1" parent="1" source="TRXBdDGxTs-NISdQ8IEX-22" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" target="TRXBdDGxTs-NISdQ8IEX-18">
-          <mxGeometry relative="1" as="geometry" />
-        </mxCell>
-        <mxCell id="TRXBdDGxTs-NISdQ8IEX-17" parent="1" style="html=1;whiteSpace=wrap;" value="&lt;pre style=&quot;box-sizing: border-box; overflow: auto; font-family: Menlo, Monaco, Consolas, &amp;quot;Courier New&amp;quot;, monospace; font-size: 13px; margin: 0px 0px 10px; line-height: 1.42857; color: rgb(220, 233, 249); word-break: break-all; overflow-wrap: break-word; border: 1px solid rgb(114, 105, 91); scrollbar-color: rgb(95, 99, 104) rgb(49, 54, 60); text-align: start; background-color: rgb(32, 36, 38); padding: 10px !important; border-radius: 4px !important;&quot;&gt;&lt;code class=&quot;mermaid language-mermaid&quot; style=&quot;box-sizing: border-box; font-family: Menlo, Monaco, Consolas, &amp;quot;Courier New&amp;quot;, monospace; font-size: inherit; padding: 0px; border-radius: 0px; white-space: pre-wrap; scrollbar-color: rgb(95, 99, 104) rgb(49, 54, 60); background-color: transparent !important; --dm-inline-bgcolor: transparent;&quot; data-dm-inline-bgcolor=&quot;&quot;&gt;Business Logic Layer&lt;/code&gt;&lt;br&gt;+User&lt;br&gt;+Review&lt;br&gt;+Amenities&lt;br&gt;+Place&lt;br&gt;+Comments&lt;/pre&gt;" vertex="1">
-          <mxGeometry height="190" width="254" x="148" y="930" as="geometry" />
-        </mxCell>
-        <mxCell id="TRXBdDGxTs-NISdQ8IEX-18" parent="1" style="html=1;whiteSpace=wrap;" value="&lt;pre style=&quot;box-sizing: border-box; overflow: auto; font-family: Menlo, Monaco, Consolas, &amp;quot;Courier New&amp;quot;, monospace; font-size: 13px; margin: 0px 0px 10px; line-height: 1.42857; color: rgb(220, 233, 249); word-break: break-all; overflow-wrap: break-word; border: 1px solid rgb(114, 105, 91); scrollbar-color: rgb(95, 99, 104) rgb(49, 54, 60); text-align: start; background-color: rgb(32, 36, 38); padding: 10px !important; border-radius: 4px !important;&quot;&gt;&lt;code class=&quot;mermaid language-mermaid&quot; style=&quot;box-sizing: border-box; font-family: Menlo, Monaco, Consolas, &amp;quot;Courier New&amp;quot;, monospace; font-size: inherit; padding: 0px; border-radius: 0px; white-space: pre-wrap; scrollbar-color: rgb(95, 99, 104) rgb(49, 54, 60); background-color: transparent !important; --dm-inline-bgcolor: transparent;&quot; data-dm-inline-bgcolor=&quot;&quot;&gt;Persistence Layer&lt;br&gt;&lt;pre style=&quot;box-sizing: border-box; overflow: auto; font-family: Menlo, Monaco, Consolas, &amp;quot;Courier New&amp;quot;, monospace; margin: 0px 0px 10px; line-height: 1.42857; color: rgb(220, 233, 249); word-break: break-all; overflow-wrap: break-word; border: 1px solid rgb(114, 105, 91); scrollbar-color: rgb(95, 99, 104) rgb(49, 54, 60); background-color: rgb(32, 36, 38); padding: 10px !important; border-radius: 4px !important;&quot;&gt;&lt;code class=&quot;mermaid language-mermaid&quot; style=&quot;box-sizing: border-box; font-family: Menlo, Monaco, Consolas, &amp;quot;Courier New&amp;quot;, monospace; font-size: inherit; padding: 0px; border-radius: 0px; white-space: pre-wrap; scrollbar-color: rgb(95, 99, 104) rgb(49, 54, 60); background-color: transparent !important; --dm-inline-bgcolor: transparent;&quot; data-dm-inline-bgcolor=&quot;&quot;&gt;+DatabaseAccess&lt;br&gt;+FileStorage&lt;br&gt;+DataPerisistence&lt;/code&gt;&lt;/pre&gt;&lt;/code&gt;&lt;/pre&gt;" vertex="1">
-          <mxGeometry height="130" width="310" x="117" y="1230" as="geometry" />
-        </mxCell>
-        <mxCell id="TRXBdDGxTs-NISdQ8IEX-19" edge="1" parent="1" source="TRXBdDGxTs-NISdQ8IEX-15" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="TRXBdDGxTs-NISdQ8IEX-20" value="">
-          <mxGeometry relative="1" as="geometry">
-            <mxPoint x="275" y="830" as="sourcePoint" />
-            <mxPoint x="275" y="930" as="targetPoint" />
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="TRXBdDGxTs-NISdQ8IEX-20" parent="1" style="html=1;whiteSpace=wrap;" value="&lt;pre style=&quot;box-sizing: border-box; overflow: auto; font-family: Menlo, Monaco, Consolas, &amp;quot;Courier New&amp;quot;, monospace; font-size: 13px; margin: 0px 0px 10px; line-height: 1.42857; color: rgb(220, 233, 249); word-break: break-all; overflow-wrap: break-word; border-width: 1px; border-style: solid; border-image: initial; scrollbar-color: rgb(95, 99, 104) rgb(49, 54, 60); text-align: start; padding: 10px !important; background-color: rgb(32, 36, 38) !important; border-color: rgb(114, 105, 91) !important; border-radius: 4px !important;&quot;&gt;&lt;code class=&quot;mermaid language-mermaid&quot; style=&quot;box-sizing: border-box; font-family: Menlo, Monaco, Consolas, &amp;quot;Courier New&amp;quot;, monospace; font-size: inherit; padding: 0px; border-radius: 0px; white-space: pre-wrap; scrollbar-color: rgb(95, 99, 104) rgb(49, 54, 60); background-color: transparent !important;&quot;&gt;Facade Pattern&lt;/code&gt;&lt;/pre&gt;" vertex="1">
-          <mxGeometry height="55" width="260" x="142" y="850" as="geometry" />
-        </mxCell>
-        <mxCell id="TRXBdDGxTs-NISdQ8IEX-21" edge="1" parent="1" source="TRXBdDGxTs-NISdQ8IEX-17" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" target="TRXBdDGxTs-NISdQ8IEX-22" value="">
-          <mxGeometry relative="1" as="geometry">
-            <mxPoint x="275" y="1120" as="sourcePoint" />
-            <mxPoint x="275" y="1190" as="targetPoint" />
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="TRXBdDGxTs-NISdQ8IEX-22" parent="1" style="html=1;whiteSpace=wrap;" value="&lt;pre style=&quot;box-sizing: border-box; overflow: auto; font-family: Menlo, Monaco, Consolas, &amp;quot;Courier New&amp;quot;, monospace; font-size: 13px; margin: 0px 0px 10px; line-height: 1.42857; color: rgb(220, 233, 249); word-break: break-all; overflow-wrap: break-word; border-width: 1px; border-style: solid; border-image: initial; scrollbar-color: rgb(95, 99, 104) rgb(49, 54, 60); text-align: start; padding: 10px !important; background-color: rgb(32, 36, 38) !important; border-color: rgb(114, 105, 91) !important; border-radius: 4px !important;&quot;&gt;&lt;code class=&quot;mermaid language-mermaid&quot; style=&quot;box-sizing: border-box; font-family: Menlo, Monaco, Consolas, &amp;quot;Courier New&amp;quot;, monospace; font-size: inherit; padding: 0px; border-radius: 0px; white-space: pre-wrap; scrollbar-color: rgb(95, 99, 104) rgb(49, 54, 60); background-color: transparent !important;&quot;&gt;Database Operations&lt;/code&gt;&lt;/pre&gt;" vertex="1">
-          <mxGeometry height="50" width="250" x="152" y="1140" as="geometry" />
-        </mxCell>
         <mxCell id="TRXBdDGxTs-NISdQ8IEX-23" parent="1" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" value="Amenities" vertex="1">
-          <mxGeometry height="150" width="160" x="760" y="10" as="geometry" />
+          <mxGeometry height="150" width="160" x="1002" y="-405" as="geometry" />
         </mxCell>
         <mxCell id="TRXBdDGxTs-NISdQ8IEX-24" parent="TRXBdDGxTs-NISdQ8IEX-23" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" value="+ amenity_list: string list" vertex="1">
           <mxGeometry height="26" width="160" y="26" as="geometry" />
@@ -106,7 +70,7 @@
           <mxGeometry height="42" width="160" y="108" as="geometry" />
         </mxCell>
         <mxCell id="TRXBdDGxTs-NISdQ8IEX-27" parent="1" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" value="Place" vertex="1">
-          <mxGeometry height="330" width="260" x="760" y="-366" as="geometry" />
+          <mxGeometry height="330" width="260" x="1002" y="-781" as="geometry" />
         </mxCell>
         <mxCell id="Qc-xl6jv6DDGC1pgQnW8-40" parent="TRXBdDGxTs-NISdQ8IEX-27" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" value="+ place_id: int" vertex="1">
           <mxGeometry height="26" width="260" y="26" as="geometry" />
@@ -154,7 +118,7 @@
           <mxGeometry height="66" width="260" y="264" as="geometry" />
         </mxCell>
         <mxCell id="Qc-xl6jv6DDGC1pgQnW8-1" parent="1" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" value="Review" vertex="1">
-          <mxGeometry height="214" width="160" x="220" y="-43" as="geometry" />
+          <mxGeometry height="214" width="160" x="462" y="-458" as="geometry" />
         </mxCell>
         <mxCell id="Qc-xl6jv6DDGC1pgQnW8-38" parent="Qc-xl6jv6DDGC1pgQnW8-1" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" value="+ user_id: int" vertex="1">
           <mxGeometry height="26" width="160" y="26" as="geometry" />
@@ -183,91 +147,91 @@
         <mxCell id="Qc-xl6jv6DDGC1pgQnW8-24" edge="1" parent="1" source="Qc-xl6jv6DDGC1pgQnW8-19" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.005;entryY=0.07;entryDx=0;entryDy=0;entryPerimeter=0;startArrow=none;startFill=0;endArrow=none;endFill=0;exitX=0.004;exitY=1.013;exitDx=0;exitDy=0;exitPerimeter=0;" target="TRXBdDGxTs-NISdQ8IEX-23">
           <mxGeometry relative="1" as="geometry">
             <Array as="points">
-              <mxPoint x="761" y="-20" />
-              <mxPoint x="761" y="-20" />
+              <mxPoint x="1003" y="-435" />
+              <mxPoint x="1003" y="-435" />
             </Array>
-            <mxPoint x="870" y="-250" as="sourcePoint" />
-            <mxPoint x="740" y="-70" as="targetPoint" />
+            <mxPoint x="1112" y="-665" as="sourcePoint" />
+            <mxPoint x="982" y="-485" as="targetPoint" />
           </mxGeometry>
         </mxCell>
         <mxCell id="SmUk0WE4a00IHk_lRsVr-1" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="0..*" vertex="1">
-          <mxGeometry height="30" width="60" x="700" y="-250" as="geometry" />
+          <mxGeometry height="30" width="60" x="942" y="-665" as="geometry" />
         </mxCell>
         <mxCell id="SmUk0WE4a00IHk_lRsVr-2" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="1" vertex="1">
-          <mxGeometry height="30" width="60" x="480" y="-240" as="geometry" />
+          <mxGeometry height="30" width="60" x="722" y="-655" as="geometry" />
         </mxCell>
         <mxCell id="SmUk0WE4a00IHk_lRsVr-3" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="1" vertex="1">
-          <mxGeometry height="30" width="60" x="712.5" y="-66" as="geometry" />
+          <mxGeometry height="30" width="60" x="954.5" y="-481" as="geometry" />
         </mxCell>
         <mxCell id="SmUk0WE4a00IHk_lRsVr-4" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="3..*" vertex="1">
-          <mxGeometry height="30" width="50" x="722.5" y="10" as="geometry" />
+          <mxGeometry height="30" width="50" x="964.5" y="-405" as="geometry" />
         </mxCell>
         <mxCell id="oMLWTCMjyaFDdx6GEP5y-3" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="1" vertex="1">
-          <mxGeometry height="21" width="35" x="725" y="-140" as="geometry" />
+          <mxGeometry height="21" width="35" x="967" y="-555" as="geometry" />
         </mxCell>
         <mxCell id="oMLWTCMjyaFDdx6GEP5y-4" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="0..*" vertex="1">
-          <mxGeometry height="30" width="60" x="370" y="-43" as="geometry" />
+          <mxGeometry height="30" width="60" x="612" y="-458" as="geometry" />
         </mxCell>
         <mxCell id="G2LW6t1l3yR2lz-vioTT-3" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="Business Logic Layer" vertex="1">
-          <mxGeometry height="30" width="140" x="180" y="-450" as="geometry" />
+          <mxGeometry height="30" width="140" x="422" y="-865" as="geometry" />
         </mxCell>
         <mxCell id="NVnYnh1C7RbwFzcAmvRw-13" edge="1" parent="1" source="xa9CocleF6afOvuUqr7u-1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0;entryDx=0;entryDy=0;" target="TRXBdDGxTs-NISdQ8IEX-1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="xa9CocleF6afOvuUqr7u-1" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=light-dark(#FFFF88,#FFFF63);strokeColor=#36393d;fontColor=light-dark(#000000,#000000);" value="The User class represents the user of hBnB. Depending on their purpose, user can be either only customer or customer/host&lt;br&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;Role :&lt;br&gt;Customer = Search/View/Book properties&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;Host =&amp;nbsp;&lt;br&gt;Search/View/Book/List properties&lt;br&gt;&lt;br&gt;Key attributes:&lt;br&gt;is_host&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;Key method:&lt;br&gt;+ register_user()&lt;/div&gt;&lt;div&gt;+ validate_user()&lt;/div&gt;&lt;div&gt;+ update_user()&lt;br&gt;&lt;br&gt;Explaination of relationship:&lt;br&gt;Place has usage(dependency) relationship with user since the Place class requires the User class to perform its functionality. Place cannot exist without user(host listing properties)&lt;/div&gt;" vertex="1">
-          <mxGeometry height="403" width="220" x="-72" y="-393" as="geometry" />
+          <mxGeometry height="403" width="220" x="170" y="-808" as="geometry" />
         </mxCell>
         <mxCell id="NVnYnh1C7RbwFzcAmvRw-14" edge="1" parent="1" source="xa9CocleF6afOvuUqr7u-3" style="edgeStyle=entityRelationEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=1.002;entryY=-0.077;entryDx=0;entryDy=0;entryPerimeter=0;curved=1;" target="TRXBdDGxTs-NISdQ8IEX-30">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="xa9CocleF6afOvuUqr7u-3" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FFFF88;strokeColor=#d79b00;" value="Services that the host is putting on the page for customer to book&lt;br&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;Role :&lt;br&gt;Display property info (name, type, availability, Amenities, host name, host id&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;Key attributes:&lt;br&gt;property_type, available_amenities&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;method:&lt;br&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;&lt;/span&gt;validate_place()&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;&lt;/span&gt;update_place()&lt;/div&gt;&lt;br&gt;Explaination of relationship:&lt;br&gt;Bi-direction with review and amenities because the place need amenities to be qualify as place and a review to gain trust from the user. And Both of them need a place to exist.&lt;/div&gt;" vertex="1">
-          <mxGeometry height="330" width="230" x="1140" y="-380" as="geometry" />
+          <mxGeometry height="330" width="230" x="1382" y="-795" as="geometry" />
         </mxCell>
         <mxCell id="NVnYnh1C7RbwFzcAmvRw-7" edge="1" parent="1" source="TRXBdDGxTs-NISdQ8IEX-10" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=1;entryDx=0;entryDy=0;endArrow=none;endFill=0;dashed=1;startArrow=open;startFill=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" target="Qc-xl6jv6DDGC1pgQnW8-33" value="">
           <mxGeometry relative="1" as="geometry">
             <Array as="points">
-              <mxPoint x="619" y="-207" />
+              <mxPoint x="861" y="-622" />
             </Array>
-            <mxPoint x="485" y="-241" as="sourcePoint" />
-            <mxPoint x="875" y="-366" as="targetPoint" />
+            <mxPoint x="727" y="-656" as="sourcePoint" />
+            <mxPoint x="1117" y="-781" as="targetPoint" />
           </mxGeometry>
         </mxCell>
         <mxCell id="Qc-xl6jv6DDGC1pgQnW8-33" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="use" vertex="1">
-          <mxGeometry height="30" width="60" x="620" y="-230" as="geometry" />
+          <mxGeometry height="30" width="60" x="862" y="-645" as="geometry" />
         </mxCell>
         <mxCell id="NVnYnh1C7RbwFzcAmvRw-9" edge="1" parent="1" source="NVnYnh1C7RbwFzcAmvRw-8" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" target="TRXBdDGxTs-NISdQ8IEX-23">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="NVnYnh1C7RbwFzcAmvRw-8" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=light-dark(#FFFFFF,#FFFF00);strokeColor=light-dark(#d6b656, #f7e702);" value="&lt;font style=&quot;color: light-dark(rgb(0, 0, 0), rgb(0, 0, 0));&quot;&gt;&lt;font style=&quot;&quot;&gt;A&lt;/font&gt;&lt;font style=&quot;&quot;&gt;menities represents the type of rooms and how many of those rooms they&#39;re are. Also includes items such as pools, spas/s&lt;/font&gt;&lt;font style=&quot;&quot;&gt;aunas etc.&lt;/font&gt;&lt;/font&gt;&lt;div&gt;&lt;font style=&quot;color: light-dark(rgb(0, 0, 0), rgb(0, 0, 0));&quot;&gt;&lt;br&gt;&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font style=&quot;color: light-dark(rgb(0, 0, 0), rgb(0, 0, 0));&quot;&gt;Key attributes are amenity_list.&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font style=&quot;color: light-dark(rgb(0, 0, 0), rgb(0, 0, 0));&quot;&gt;&lt;br&gt;&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font style=&quot;color: light-dark(rgb(0, 0, 0), rgb(0, 0, 0));&quot;&gt;Method&#39;s include:&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font style=&quot;color: light-dark(rgb(0, 0, 0), rgb(0, 0, 0));&quot;&gt;display_amenities()&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;font style=&quot;color: light-dark(rgb(0, 0, 0), rgb(0, 0, 0));&quot;&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; validate_amenity()&lt;/font&gt;&lt;/div&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;font style=&quot;color: light-dark(rgb(0, 0, 0), rgb(0, 0, 0));&quot;&gt;&lt;br&gt;&lt;/font&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;font style=&quot;color: light-dark(rgb(0, 0, 0), rgb(0, 0, 0));&quot;&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;Method&#39;s Description:&lt;br&gt;&lt;/font&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;font style=&quot;color: light-dark(rgb(0, 0, 0), rgb(0, 0, 0));&quot;&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;Validate information(checks for&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; any failures) and than save &lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;amenities added on success.&lt;br&gt;&lt;/font&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;font style=&quot;color: light-dark(rgb(0, 0, 0), rgb(0, 0, 0));&quot;&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;Displays amenities on the &lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;place.&lt;br&gt;&lt;/font&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&lt;font style=&quot;color: light-dark(rgb(0, 0, 0), rgb(0, 0, 0));&quot;&gt;&#x9;&lt;/font&gt;&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;font style=&quot;color: light-dark(rgb(0, 0, 0), rgb(0, 0, 0));&quot;&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;Relationship is -Bi-association:&lt;br&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;Cannot have a Place without&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; Amenities nor Amenities&amp;nbsp;&lt;/font&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;font style=&quot;color: light-dark(rgb(0, 0, 0), rgb(0, 0, 0));&quot;&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; without a Place&lt;/font&gt;&lt;/div&gt;" vertex="1">
-          <mxGeometry height="350" width="200" x="740" y="240" as="geometry" />
+          <mxGeometry height="350" width="200" x="1382" y="-375" as="geometry" />
         </mxCell>
         <mxCell id="xa9CocleF6afOvuUqr7u-23" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=light-dark(#FFFF88,#FFFF63);strokeColor=#36393d;fontColor=light-dark(#000000,#000000);" value="&lt;div&gt;&lt;div&gt;Explanatory Notes: (guideline)&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;A brief description of each entity, including its role in the system and key attributes and methods.&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;Explanation of relationships between entities and how they contribute to the overall business logic.&lt;/div&gt;&lt;/div&gt;" vertex="1">
-          <mxGeometry height="230" width="400" x="390" y="-665" as="geometry" />
+          <mxGeometry height="230" width="400" x="632" y="-1080" as="geometry" />
         </mxCell>
         <mxCell id="W2vF0aZWDMr8ijiC13AB-3" edge="1" parent="1" source="W2vF0aZWDMr8ijiC13AB-1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" target="Qc-xl6jv6DDGC1pgQnW8-1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="W2vF0aZWDMr8ijiC13AB-1" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=light-dark(#FFFF88,#FFFF63);strokeColor=#36393d;fontColor=light-dark(#000000,#000000);" value="&lt;div&gt;Review represents the rating given by those that have stayed at the Place.&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;Key attributes:&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;text-align: left;&quot;&gt;&lt;font style=&quot;color: light-dark(rgb(0, 0, 0), rgb(0, 0, 0));&quot;&gt;+ review: string&lt;/font&gt;&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;Method:&lt;/div&gt;&lt;div&gt;+ validate_review()&lt;/div&gt;&lt;div&gt;+ submit_review()&amp;nbsp;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;Relatioship:&lt;/div&gt;&lt;div&gt;Bi-association with Place, cant have no ability to review a place.&lt;br&gt;0 to many instances Place has of Review.&lt;/div&gt;&lt;div&gt;Review has 1 instance of Place.&lt;/div&gt;&lt;div&gt;Dependent on User, cant commit reviews without user.&amp;nbsp;&lt;/div&gt;&lt;div&gt;Review has 1 instance of User vice-versa.&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;" vertex="1">
-          <mxGeometry height="270" width="230" x="185" y="240" as="geometry" />
+          <mxGeometry height="270" width="230" x="90" y="-320" as="geometry" />
         </mxCell>
         <mxCell id="tQbxxfflCs40XiXrKMfo-1" edge="1" parent="1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=none;endFill=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="TRXBdDGxTs-NISdQ8IEX-30">
           <mxGeometry relative="1" as="geometry">
             <Array as="points">
-              <mxPoint x="380" y="-110" />
-              <mxPoint x="760" y="-110" />
+              <mxPoint x="622" y="-525" />
+              <mxPoint x="1002" y="-525" />
             </Array>
-            <mxPoint x="380" y="-10.002962962963053" as="sourcePoint" />
-            <mxPoint x="710" y="-80" as="targetPoint" />
+            <mxPoint x="622" y="-425.00296296296307" as="sourcePoint" />
+            <mxPoint x="952" y="-495" as="targetPoint" />
           </mxGeometry>
         </mxCell>
         <mxCell id="sTjTZyDY8kwwTlhZItui-1" edge="1" parent="1" source="Qc-xl6jv6DDGC1pgQnW8-1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=-0.013;entryY=1.007;entryDx=0;entryDy=0;dashed=1;entryPerimeter=0;" target="TRXBdDGxTs-NISdQ8IEX-12">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="sTjTZyDY8kwwTlhZItui-2" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="1" vertex="1">
-          <mxGeometry height="30" width="60" x="247" y="-73" as="geometry" />
+          <mxGeometry height="30" width="60" x="489" y="-488" as="geometry" />
         </mxCell>
         <mxCell id="sTjTZyDY8kwwTlhZItui-3" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="1" vertex="1">
-          <mxGeometry height="30" width="60" x="280" y="-155" as="geometry" />
+          <mxGeometry height="30" width="60" x="522" y="-570" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>

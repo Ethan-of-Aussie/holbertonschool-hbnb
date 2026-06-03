@@ -6,77 +6,71 @@
         <mxCell id="1" parent="0" />
         <mxCell id="vZHe2jEZJALmbnLdjFB--106" edge="1" parent="1" source="vZHe2jEZJALmbnLdjFB--105" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" target="vZHe2jEZJALmbnLdjFB--6" value="">
           <mxGeometry relative="1" as="geometry">
-            <mxPoint x="360" y="250" as="sourcePoint" />
+            <mxPoint x="-20" y="180" as="sourcePoint" />
           </mxGeometry>
         </mxCell>
         <mxCell id="vZHe2jEZJALmbnLdjFB--6" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="&lt;strong style=&quot;box-sizing: border-box; font-weight: bold; scrollbar-color: rgb(95, 99, 104) rgb(49, 54, 60); color: rgb(220, 233, 249); font-family: aktiv-grotesk, sans-serif; font-size: 14px; text-align: start; background-color: rgb(32, 36, 38);&quot;&gt;Presentation Layer &lt;/strong&gt;&lt;span style=&quot;box-sizing: border-box; scrollbar-color: rgb(95, 99, 104) rgb(49, 54, 60); color: rgb(220, 233, 249); font-family: aktiv-grotesk, sans-serif; font-size: 14px; text-align: start; background-color: rgb(32, 36, 38);&quot;&gt;&lt;i&gt;(ServiceAPI):&lt;/i&gt;&lt;/span&gt;&lt;div&gt;&lt;span style=&quot;color: rgb(220, 233, 249); font-family: aktiv-grotesk, sans-serif; font-size: 14px; text-align: start; background-color: rgb(32, 36, 38);&quot;&gt;&lt;i&gt;(Client_Interface):&amp;nbsp;&lt;/i&gt;&lt;/span&gt;&lt;/div&gt;" vertex="1">
-          <mxGeometry height="81.82" width="150" x="400" y="301.38" as="geometry" />
+          <mxGeometry height="81.82" width="150" x="20" y="231.38" as="geometry" />
         </mxCell>
         <mxCell id="vZHe2jEZJALmbnLdjFB--8" edge="1" parent="1" source="vZHe2jEZJALmbnLdjFB--10" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="vZHe2jEZJALmbnLdjFB--39">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="vZHe2jEZJALmbnLdjFB--10" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="&lt;span style=&quot;box-sizing: border-box; scrollbar-color: rgb(95, 99, 104) rgb(49, 54, 60); color: rgb(220, 233, 249); font-family: aktiv-grotesk, sans-serif; font-size: 14px; text-align: start; background-color: rgb(32, 36, 38);&quot;&gt;&lt;b&gt;Business Logic Layer &lt;/b&gt;&lt;i style=&quot;&quot;&gt;(ModelClasses):&lt;/i&gt;&lt;/span&gt;" vertex="1">
-          <mxGeometry height="80.93" width="175" x="765" y="302.27" as="geometry" />
+          <mxGeometry height="80.93" width="175" x="385" y="232.26999999999998" as="geometry" />
         </mxCell>
         <mxCell id="vZHe2jEZJALmbnLdjFB--11" edge="1" parent="1" source="vZHe2jEZJALmbnLdjFB--12" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="vZHe2jEZJALmbnLdjFB--102">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="vZHe2jEZJALmbnLdjFB--12" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="&lt;strong style=&quot;box-sizing: border-box; font-weight: bold; scrollbar-color: rgb(95, 99, 104) rgb(49, 54, 60); color: rgb(220, 233, 249); font-family: aktiv-grotesk, sans-serif; font-size: 14px; text-align: start; background-color: rgb(32, 36, 38);&quot;&gt;Persistence Layer:&lt;/strong&gt;" vertex="1">
-          <mxGeometry height="88.7" width="170" x="1145" y="298.39" as="geometry" />
+          <mxGeometry height="88.7" width="170" x="765" y="228.39" as="geometry" />
         </mxCell>
         <mxCell id="vZHe2jEZJALmbnLdjFB--29" parent="1" style="rounded=0;whiteSpace=wrap;html=1;align=center;fillColor=#fff2cc;strokeColor=#d6b656;" value="&lt;div style=&quot;&quot;&gt;&lt;font color=&quot;#dce9f9&quot; face=&quot;aktiv-grotesk, sans-serif&quot;&gt;&lt;span style=&quot;font-size: 14px; background-color: rgb(32, 36, 38);&quot;&gt;&lt;b&gt;Database&lt;br&gt;Storage&lt;/b&gt;&lt;/span&gt;&lt;/font&gt;&lt;/div&gt;" vertex="1">
-          <mxGeometry height="65.46" width="120" x="1170" y="517" as="geometry" />
+          <mxGeometry height="65.46" width="120" x="790" y="447" as="geometry" />
         </mxCell>
         <mxCell id="vZHe2jEZJALmbnLdjFB--35" edge="1" parent="1" source="vZHe2jEZJALmbnLdjFB--37" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" target="vZHe2jEZJALmbnLdjFB--10">
           <mxGeometry relative="1" as="geometry">
-            <mxPoint x="750" y="339.5700000000001" as="sourcePoint" />
+            <mxPoint x="370" y="269.5700000000001" as="sourcePoint" />
           </mxGeometry>
         </mxCell>
         <mxCell id="vZHe2jEZJALmbnLdjFB--36" edge="1" parent="1" source="vZHe2jEZJALmbnLdjFB--6" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="vZHe2jEZJALmbnLdjFB--37">
           <mxGeometry relative="1" as="geometry">
-            <mxPoint x="575" y="430" as="targetPoint" />
+            <mxPoint x="195" y="360" as="targetPoint" />
           </mxGeometry>
         </mxCell>
         <mxCell id="vZHe2jEZJALmbnLdjFB--37" parent="1" style="rounded=0;whiteSpace=wrap;html=1;align=center;fillColor=#fff2cc;strokeColor=#d6b656;" value="&lt;div style=&quot;&quot;&gt;&lt;font color=&quot;#dce9f9&quot; face=&quot;aktiv-grotesk, sans-serif&quot;&gt;&lt;span style=&quot;font-size: 14px; background-color: rgb(32, 36, 38);&quot;&gt;&lt;b&gt;Facade Pattern&lt;/b&gt;&lt;/span&gt;&lt;/font&gt;&lt;/div&gt;" vertex="1">
-          <mxGeometry height="65.46" width="120" x="600" y="309.11999999999995" as="geometry" />
+          <mxGeometry height="65.46" width="120" x="220" y="239.11999999999995" as="geometry" />
         </mxCell>
         <mxCell id="vZHe2jEZJALmbnLdjFB--38" edge="1" parent="1" source="vZHe2jEZJALmbnLdjFB--39" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="vZHe2jEZJALmbnLdjFB--12">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="vZHe2jEZJALmbnLdjFB--39" parent="1" style="rounded=0;whiteSpace=wrap;html=1;align=center;fillColor=#fff2cc;strokeColor=#d6b656;" value="Database Operations" vertex="1">
-          <mxGeometry height="65.46" width="120" x="970" y="310.01" as="geometry" />
+          <mxGeometry height="65.46" width="120" x="590" y="240.01" as="geometry" />
         </mxCell>
         <mxCell id="vZHe2jEZJALmbnLdjFB--101" edge="1" parent="1" source="vZHe2jEZJALmbnLdjFB--102" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="vZHe2jEZJALmbnLdjFB--29">
           <mxGeometry relative="1" as="geometry">
-            <mxPoint x="1460" y="530" as="targetPoint" />
+            <mxPoint x="1080" y="460" as="targetPoint" />
           </mxGeometry>
         </mxCell>
         <mxCell id="vZHe2jEZJALmbnLdjFB--102" parent="1" style="rounded=0;whiteSpace=wrap;html=1;align=center;fillColor=#fff2cc;strokeColor=#d6b656;" value="&lt;div style=&quot;&quot;&gt;&lt;font color=&quot;#dce9f9&quot; face=&quot;aktiv-grotesk, sans-serif&quot;&gt;&lt;span style=&quot;font-size: 14px; background-color: rgb(32, 36, 38);&quot;&gt;&lt;b&gt;Checking for access right&lt;/b&gt;&lt;/span&gt;&lt;/font&gt;&lt;/div&gt;" vertex="1">
-          <mxGeometry height="65.46" width="120" x="1170" y="420" as="geometry" />
+          <mxGeometry height="65.46" width="120" x="790" y="350" as="geometry" />
         </mxCell>
         <mxCell id="vZHe2jEZJALmbnLdjFB--105" parent="1" style="whiteSpace=wrap;html=1;rounded=0;" value="User" vertex="1">
-          <mxGeometry height="17.92" width="65" x="442.5" y="248.39" as="geometry" />
+          <mxGeometry height="17.92" width="65" x="62.5" y="178.39" as="geometry" />
         </mxCell>
         <mxCell id="WIsYPLuYnzwIEppj4hiX-1" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=light-dark(#FFFF88,#FFFF63);strokeColor=#36393d;fontColor=light-dark(#000000,#000000);" value="User sends API-Calls through a Client_Interface&lt;br&gt;for-which is sent through Business Logic Layer&amp;nbsp;" vertex="1">
-          <mxGeometry height="200.88" width="120" x="270" y="230" as="geometry" />
+          <mxGeometry height="200.88" width="120" x="20" y="330" as="geometry" />
         </mxCell>
         <mxCell id="WIsYPLuYnzwIEppj4hiX-2" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=light-dark(#FFFF88,#FFFF63);strokeColor=#36393d;fontColor=light-dark(#000000,#000000);" value="In Business Logic Layer, Classes are currently abstracted with &#39;ModelClasses&#39;" vertex="1">
-          <mxGeometry height="200.88" width="120" x="792.5" y="90" as="geometry" />
+          <mxGeometry height="200.88" width="120" x="412.5" y="20" as="geometry" />
         </mxCell>
         <mxCell id="WIsYPLuYnzwIEppj4hiX-3" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=light-dark(#FFFF88,#FFFF63);strokeColor=#36393d;fontColor=light-dark(#000000,#000000);" value="Classes and their methods from BLL,&lt;br&gt;send through actions into the Persistence Layer.&lt;br&gt;Persistence Layer contains the Database where private and protected data are kept. sent, removed, edited and returned" vertex="1">
-          <mxGeometry height="200.88" width="120" x="1170" y="90" as="geometry" />
+          <mxGeometry height="200.88" width="120" x="790" y="20" as="geometry" />
         </mxCell>
         <mxCell id="jcnPVMmyGXToek09mdS7-1" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=light-dark(#FFFFFF,#FFF200);fontColor=light-dark(#000000,#000000);" value="The Facade Pattern Abstracts all method actions away from API" vertex="1">
-          <mxGeometry height="60" width="120" x="600" y="200" as="geometry" />
-        </mxCell>
-        <mxCell id="3AgvAKh3npFNZkdtQLno-1" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="The package diagram has been divided to represent three layers:&lt;br&gt;&lt;br&gt;Presentation Layer&lt;div&gt;This is the UI layer which displays the website to the user and is responsible for handling the interactions between users and the HBnB system. The presentation layer, being the front end focuses on making it easier for users to communicate with the backend and database through easy to use interfaces.&lt;br&gt;Layer with most basic methods&lt;br&gt;&lt;br&gt;Business Logic Layer&lt;div&gt;This is the layer which contains the bulk of the website&#39;s functionality and logic. Whatever action taken by the user in the presentation layer is being acted on in the business logic layer. This layer contains the majority of our classes that has been illustrated in the upcoming class diagram.&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;Persistence Layer:&lt;/div&gt;&lt;div&gt;This layer is the database layer, where storage of information and data retrieval occurs, protected by the business logic layer. It also will be the layer that provides simple operations such as saving, updating, deleting and retrieving of objects to and from the Business layer and will hide its internal logic from the Business layer, but will be able to communicate information needed for operations.&lt;/div&gt;&lt;/div&gt;" vertex="1">
-          <mxGeometry height="303" width="530" x="270" y="460" as="geometry" />
-        </mxCell>
-        <mxCell id="W_o3C3PsjH2Ao98SipCb-2" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="Business Logic Layer&lt;div&gt;Contain core business logic and the main components for business to operate.&lt;/div&gt;" vertex="1">
-          <mxGeometry height="50" width="530" x="270" y="790" as="geometry" />
+          <mxGeometry height="60" width="120" x="220" y="130" as="geometry" />
         </mxCell>
         <mxCell id="Krj6psJROP2RNWawIp8D-1" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=light-dark(#FFFFFF,#FFCE02);align=center;verticalAlign=middle;rounded=0;fontColor=light-dark(#000000,#000000);" value="Search, save, add, return&lt;br&gt;and delete" vertex="1">
-          <mxGeometry height="110" width="80" x="990" y="188.39" as="geometry" />
+          <mxGeometry height="110" width="80" x="610" y="118.38999999999999" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>

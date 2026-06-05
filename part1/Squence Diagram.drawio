@@ -1,6 +1,6 @@
 <mxfile host="app.diagrams.net" agent="5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/109.0.0.0 Safari/537.36">
   <diagram name="Page-1" id="2YBvvXClWsGukQMizWep">
-    <mxGraphModel dx="649" dy="2164" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+    <mxGraphModel dx="1234" dy="3122" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -36,10 +36,10 @@
           <mxGeometry height="30" width="60" x="1055" y="-615" as="geometry" />
         </mxCell>
         <mxCell id="R6YphOfNyNHtJLwu2XoU-18" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="Confirm save" vertex="1">
-          <mxGeometry height="30" width="80" x="885" y="-555" as="geometry" />
+          <mxGeometry height="30" width="80" x="825" y="-560" as="geometry" />
         </mxCell>
         <mxCell id="R6YphOfNyNHtJLwu2XoU-20" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="&amp;nbsp;Succes/Failure" vertex="1">
-          <mxGeometry height="30" width="140" x="607.5" y="-525" as="geometry" />
+          <mxGeometry height="30" width="140" x="555" y="-530" as="geometry" />
         </mxCell>
         <mxCell id="R6YphOfNyNHtJLwu2XoU-21" edge="1" parent="1" source="R6YphOfNyNHtJLwu2XoU-12" style="endArrow=classic;html=1;rounded=0;" target="R6YphOfNyNHtJLwu2XoU-5" value="">
           <mxGeometry height="50" relative="1" width="50" as="geometry">
@@ -132,7 +132,7 @@
           <mxGeometry height="30" width="60" x="1035" y="-185" as="geometry" />
         </mxCell>
         <mxCell id="TdW9oKKxsJU2AUWhq7uW-16" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="Confirm save" vertex="1">
-          <mxGeometry height="30" width="80" x="820" y="-122.5" as="geometry" />
+          <mxGeometry height="30" width="80" x="792.5" y="-122.5" as="geometry" />
         </mxCell>
         <mxCell id="TdW9oKKxsJU2AUWhq7uW-18" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="&amp;nbsp;Success/Failure" vertex="1">
           <mxGeometry height="30" width="140" x="545" y="-105" as="geometry" />
@@ -228,7 +228,7 @@
           <mxGeometry height="30" width="60" x="1022.5" y="195" as="geometry" />
         </mxCell>
         <mxCell id="TdW9oKKxsJU2AUWhq7uW-49" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="Confirm save" vertex="1">
-          <mxGeometry height="30" width="80" x="815" y="257.5" as="geometry" />
+          <mxGeometry height="30" width="80" x="775" y="257.5" as="geometry" />
         </mxCell>
         <mxCell id="TdW9oKKxsJU2AUWhq7uW-51" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="&amp;nbsp;Result" vertex="1">
           <mxGeometry height="30" width="140" x="532.5" y="275" as="geometry" />
@@ -324,7 +324,7 @@
           <mxGeometry height="30" width="60" x="1007.5" y="595" as="geometry" />
         </mxCell>
         <mxCell id="TdW9oKKxsJU2AUWhq7uW-79" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="Deserialize List" vertex="1">
-          <mxGeometry height="30" width="80" x="792.5" y="657.5" as="geometry" />
+          <mxGeometry height="30" width="80" x="757.5" y="657.5" as="geometry" />
         </mxCell>
         <mxCell id="TdW9oKKxsJU2AUWhq7uW-81" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="Return List" vertex="1">
           <mxGeometry height="30" width="140" x="517.5" y="675" as="geometry" />
@@ -412,8 +412,14 @@
         <mxCell id="mDRcFpAJLodZhl-RSjpT-6" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="User wants to see list of places" vertex="1">
           <mxGeometry height="30" width="95" x="540" y="595" as="geometry" />
         </mxCell>
-        <mxCell id="rY-fmp4M6mISOkt_B0Yv-1" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=light-dark(#FFFF88,#1323FF);align=left;verticalAlign=middle;rounded=0;fontColor=light-dark(#000000,#A7FFEB);" value="&lt;div style=&quot;&quot;&gt;&lt;span style=&quot;background-color: transparent; line-height: 0%;&quot;&gt;API -&amp;gt; Business logic layer had to be done.&lt;br&gt;&lt;br&gt;backend meant something else entirely., which API is part of backend.&lt;br&gt;Have to have business logic layer.&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;&quot;&gt;&lt;span style=&quot;background-color: transparent; line-height: 0%;&quot;&gt;Dont need to declare facade anywhere, its just an idea that is self explanatory in the industry.&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;&quot;&gt;&lt;span style=&quot;background-color: transparent; line-height: 0%;&quot;&gt;&lt;br&gt;&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;&quot;&gt;&lt;span style=&quot;background-color: transparent; line-height: 0%;&quot;&gt;Dont typically need to write return on return line just the action.&lt;br&gt;predominantly aim for the action to be committed rather than whats happening, as whats happening is self-evident.&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;&quot;&gt;&lt;span style=&quot;background-color: transparent; line-height: 0%;&quot;&gt;&lt;br&gt;&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;&quot;&gt;&lt;span style=&quot;background-color: transparent; line-height: 0%;&quot;&gt;&lt;br&gt;&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;&quot;&gt;&lt;span style=&quot;background-color: transparent; line-height: 0%;&quot;&gt;&amp;nbsp;&lt;br&gt;&amp;nbsp;&lt;/span&gt;&lt;/div&gt;" vertex="1">
-          <mxGeometry height="300" width="325" x="902.5" y="-1010" as="geometry" />
+        <mxCell id="rY-fmp4M6mISOkt_B0Yv-8" edge="1" parent="1" source="rY-fmp4M6mISOkt_B0Yv-1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;endArrow=none;endFill=0;" target="rY-fmp4M6mISOkt_B0Yv-7">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="rY-fmp4M6mISOkt_B0Yv-1" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=light-dark(#FFFF88,#1323FF);align=left;verticalAlign=middle;rounded=0;fontColor=light-dark(#000000,#A7FFEB);" value="&lt;div style=&quot;&quot;&gt;&lt;span style=&quot;background-color: transparent; line-height: 0%;&quot;&gt;API -&amp;gt; Business logic layer had to be done.&lt;br&gt;&lt;br&gt;backend meant something else entirely., which API is part of backend.&lt;br&gt;Have to have business logic layer.&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;&quot;&gt;&lt;span style=&quot;background-color: transparent; line-height: 0%;&quot;&gt;Dont need to declare facade anywhere, its just an idea that is self explanatory in the industry.&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;&quot;&gt;&lt;span style=&quot;background-color: transparent; line-height: 0%;&quot;&gt;&lt;br&gt;&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;&quot;&gt;&lt;span style=&quot;background-color: transparent; line-height: 0%;&quot;&gt;Dont typically need to write return on return line just the action.&lt;br&gt;predominantly aim for the action to be committed rather than whats happening, as whats happening is self-evident.&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;&quot;&gt;&lt;span style=&quot;background-color: transparent; line-height: 0%;&quot;&gt;&lt;br&gt;&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;&quot;&gt;Something else that seems self-evident for example, &#39;confirm save&#39; throughout across is ideal rather than &#39;return response&#39; from BLL to API after, seems excessive and may just be more confusing than actually meaningful.&lt;/div&gt;&lt;div style=&quot;&quot;&gt;&lt;br&gt;&lt;/div&gt;&lt;div style=&quot;&quot;&gt;also doing actions in database may very well be actualized with business logic layer from start to finish, this i myself am not 100% on but if so just having one confirmation being done to check errors of data corruption/failure/success is enough&lt;/div&gt;&lt;div style=&quot;&quot;&gt;&lt;span style=&quot;background-color: transparent; line-height: 0%;&quot;&gt;&amp;nbsp;&lt;br&gt;&amp;nbsp;Also, with the slight change in naming conventions. a diagram like user registration can quickly take on all factors of user like creation, edit, delete by using terms that draw the conclusion. this depends on the words used and if said words are comprehensible to others BUT still may be better to enact different concepts separately if its better comprehension, ideally what is fully understood and quickly read by the reader&amp;nbsp;&amp;nbsp;&lt;/span&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="490" width="325" x="1310" y="-510" as="geometry" />
+        </mxCell>
+        <mxCell id="rY-fmp4M6mISOkt_B0Yv-7" parent="1" style="text;align=center;fontStyle=1;verticalAlign=middle;spacingLeft=3;spacingRight=3;strokeColor=none;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;html=1;fontSize=29;fontColor=light-dark(#000000,#CC0000);" value="READ BEFORE MAKING CHANGES THAN REFLECT" vertex="1">
+          <mxGeometry height="230" width="280" x="1290" y="-790" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>

@@ -1,6 +1,6 @@
 <mxfile host="app.diagrams.net" agent="5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/109.0.0.0 Safari/537.36">
   <diagram name="Page-1" id="2YBvvXClWsGukQMizWep">
-    <mxGraphModel dx="1768" dy="2079" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+    <mxGraphModel dx="949" dy="2655" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -20,7 +20,7 @@
             <mxPoint x="925" y="-575" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="R6YphOfNyNHtJLwu2XoU-11" parent="1" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=0;dropTarget=0;collapsible=0;recursiveResize=0;outlineConnect=0;portConstraint=eastwest;newEdgeStyle={&quot;edgeStyle&quot;:&quot;elbowEdgeStyle&quot;,&quot;elbow&quot;:&quot;vertical&quot;,&quot;curved&quot;:0,&quot;rounded&quot;:0};" value="&lt;div&gt;API&lt;/div&gt;" vertex="1">
+        <mxCell id="R6YphOfNyNHtJLwu2XoU-11" parent="1" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=0;dropTarget=0;collapsible=0;recursiveResize=0;outlineConnect=0;portConstraint=eastwest;newEdgeStyle={&quot;edgeStyle&quot;:&quot;elbowEdgeStyle&quot;,&quot;elbow&quot;:&quot;vertical&quot;,&quot;curved&quot;:0,&quot;rounded&quot;:0};" value="&lt;div&gt;BUSINESS LOGIC LAYER&lt;/div&gt;" vertex="1">
           <mxGeometry height="300" width="100" x="940.25" y="-665" as="geometry" />
         </mxCell>
         <mxCell id="R6YphOfNyNHtJLwu2XoU-12" parent="R6YphOfNyNHtJLwu2XoU-11" style="html=1;points=[];perimeter=orthogonalPerimeter;outlineConnect=0;targetShapes=umlLifeline;portConstraint=eastwest;newEdgeStyle={&quot;edgeStyle&quot;:&quot;elbowEdgeStyle&quot;,&quot;elbow&quot;:&quot;vertical&quot;,&quot;curved&quot;:0,&quot;rounded&quot;:0};" value="" vertex="1">
@@ -122,13 +122,13 @@
             <mxPoint x="905" y="-145" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="TdW9oKKxsJU2AUWhq7uW-7" parent="1" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=0;dropTarget=0;collapsible=0;recursiveResize=0;outlineConnect=0;portConstraint=eastwest;newEdgeStyle={&quot;edgeStyle&quot;:&quot;elbowEdgeStyle&quot;,&quot;elbow&quot;:&quot;vertical&quot;,&quot;curved&quot;:0,&quot;rounded&quot;:0};" value="Presentation" vertex="1">
+        <mxCell id="TdW9oKKxsJU2AUWhq7uW-7" parent="1" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=0;dropTarget=0;collapsible=0;recursiveResize=0;outlineConnect=0;portConstraint=eastwest;newEdgeStyle={&quot;edgeStyle&quot;:&quot;elbowEdgeStyle&quot;,&quot;elbow&quot;:&quot;vertical&quot;,&quot;curved&quot;:0,&quot;rounded&quot;:0};" value="API" vertex="1">
           <mxGeometry height="300" width="100" x="675" y="-235" as="geometry" />
         </mxCell>
         <mxCell id="TdW9oKKxsJU2AUWhq7uW-8" parent="TdW9oKKxsJU2AUWhq7uW-7" style="html=1;points=[];perimeter=orthogonalPerimeter;outlineConnect=0;targetShapes=umlLifeline;portConstraint=eastwest;newEdgeStyle={&quot;edgeStyle&quot;:&quot;elbowEdgeStyle&quot;,&quot;elbow&quot;:&quot;vertical&quot;,&quot;curved&quot;:0,&quot;rounded&quot;:0};" value="" vertex="1">
           <mxGeometry height="110" width="10" x="45" y="70" as="geometry" />
         </mxCell>
-        <mxCell id="TdW9oKKxsJU2AUWhq7uW-10" parent="1" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=0;dropTarget=0;collapsible=0;recursiveResize=0;outlineConnect=0;portConstraint=eastwest;newEdgeStyle={&quot;edgeStyle&quot;:&quot;elbowEdgeStyle&quot;,&quot;elbow&quot;:&quot;vertical&quot;,&quot;curved&quot;:0,&quot;rounded&quot;:0};" value="&lt;div&gt;API&lt;/div&gt;" vertex="1">
+        <mxCell id="TdW9oKKxsJU2AUWhq7uW-10" parent="1" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=0;dropTarget=0;collapsible=0;recursiveResize=0;outlineConnect=0;portConstraint=eastwest;newEdgeStyle={&quot;edgeStyle&quot;:&quot;elbowEdgeStyle&quot;,&quot;elbow&quot;:&quot;vertical&quot;,&quot;curved&quot;:0,&quot;rounded&quot;:0};" value="&lt;div&gt;BUSINESS LOGIC LAYER&lt;/div&gt;" vertex="1">
           <mxGeometry height="300" width="100" x="865" y="-235" as="geometry" />
         </mxCell>
         <mxCell id="TdW9oKKxsJU2AUWhq7uW-11" parent="TdW9oKKxsJU2AUWhq7uW-10" style="html=1;points=[];perimeter=orthogonalPerimeter;outlineConnect=0;targetShapes=umlLifeline;portConstraint=eastwest;newEdgeStyle={&quot;edgeStyle&quot;:&quot;elbowEdgeStyle&quot;,&quot;elbow&quot;:&quot;vertical&quot;,&quot;curved&quot;:0,&quot;rounded&quot;:0};" value="" vertex="1">
@@ -230,13 +230,13 @@
             <mxPoint x="892.5" y="235" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="TdW9oKKxsJU2AUWhq7uW-40" parent="1" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=0;dropTarget=0;collapsible=0;recursiveResize=0;outlineConnect=0;portConstraint=eastwest;newEdgeStyle={&quot;edgeStyle&quot;:&quot;elbowEdgeStyle&quot;,&quot;elbow&quot;:&quot;vertical&quot;,&quot;curved&quot;:0,&quot;rounded&quot;:0};" value="Presentation" vertex="1">
+        <mxCell id="TdW9oKKxsJU2AUWhq7uW-40" parent="1" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=0;dropTarget=0;collapsible=0;recursiveResize=0;outlineConnect=0;portConstraint=eastwest;newEdgeStyle={&quot;edgeStyle&quot;:&quot;elbowEdgeStyle&quot;,&quot;elbow&quot;:&quot;vertical&quot;,&quot;curved&quot;:0,&quot;rounded&quot;:0};" value="API" vertex="1">
           <mxGeometry height="300" width="100" x="662.5" y="145" as="geometry" />
         </mxCell>
         <mxCell id="TdW9oKKxsJU2AUWhq7uW-41" parent="TdW9oKKxsJU2AUWhq7uW-40" style="html=1;points=[];perimeter=orthogonalPerimeter;outlineConnect=0;targetShapes=umlLifeline;portConstraint=eastwest;newEdgeStyle={&quot;edgeStyle&quot;:&quot;elbowEdgeStyle&quot;,&quot;elbow&quot;:&quot;vertical&quot;,&quot;curved&quot;:0,&quot;rounded&quot;:0};" value="" vertex="1">
           <mxGeometry height="110" width="10" x="45" y="70" as="geometry" />
         </mxCell>
-        <mxCell id="TdW9oKKxsJU2AUWhq7uW-43" parent="1" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=0;dropTarget=0;collapsible=0;recursiveResize=0;outlineConnect=0;portConstraint=eastwest;newEdgeStyle={&quot;edgeStyle&quot;:&quot;elbowEdgeStyle&quot;,&quot;elbow&quot;:&quot;vertical&quot;,&quot;curved&quot;:0,&quot;rounded&quot;:0};" value="&lt;div&gt;API&lt;/div&gt;" vertex="1">
+        <mxCell id="TdW9oKKxsJU2AUWhq7uW-43" parent="1" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=0;dropTarget=0;collapsible=0;recursiveResize=0;outlineConnect=0;portConstraint=eastwest;newEdgeStyle={&quot;edgeStyle&quot;:&quot;elbowEdgeStyle&quot;,&quot;elbow&quot;:&quot;vertical&quot;,&quot;curved&quot;:0,&quot;rounded&quot;:0};" value="&lt;div&gt;BUSINESS LOGIC LAYER&lt;/div&gt;" vertex="1">
           <mxGeometry height="300" width="100" x="852.5" y="145" as="geometry" />
         </mxCell>
         <mxCell id="TdW9oKKxsJU2AUWhq7uW-44" parent="TdW9oKKxsJU2AUWhq7uW-43" style="html=1;points=[];perimeter=orthogonalPerimeter;outlineConnect=0;targetShapes=umlLifeline;portConstraint=eastwest;newEdgeStyle={&quot;edgeStyle&quot;:&quot;elbowEdgeStyle&quot;,&quot;elbow&quot;:&quot;vertical&quot;,&quot;curved&quot;:0,&quot;rounded&quot;:0};" value="" vertex="1">
@@ -338,13 +338,13 @@
             <mxPoint x="877.5" y="635" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="TdW9oKKxsJU2AUWhq7uW-70" parent="1" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=0;dropTarget=0;collapsible=0;recursiveResize=0;outlineConnect=0;portConstraint=eastwest;newEdgeStyle={&quot;edgeStyle&quot;:&quot;elbowEdgeStyle&quot;,&quot;elbow&quot;:&quot;vertical&quot;,&quot;curved&quot;:0,&quot;rounded&quot;:0};" value="Presentation" vertex="1">
+        <mxCell id="TdW9oKKxsJU2AUWhq7uW-70" parent="1" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=0;dropTarget=0;collapsible=0;recursiveResize=0;outlineConnect=0;portConstraint=eastwest;newEdgeStyle={&quot;edgeStyle&quot;:&quot;elbowEdgeStyle&quot;,&quot;elbow&quot;:&quot;vertical&quot;,&quot;curved&quot;:0,&quot;rounded&quot;:0};" value="API" vertex="1">
           <mxGeometry height="300" width="100" x="647.5" y="545" as="geometry" />
         </mxCell>
         <mxCell id="TdW9oKKxsJU2AUWhq7uW-71" parent="TdW9oKKxsJU2AUWhq7uW-70" style="html=1;points=[];perimeter=orthogonalPerimeter;outlineConnect=0;targetShapes=umlLifeline;portConstraint=eastwest;newEdgeStyle={&quot;edgeStyle&quot;:&quot;elbowEdgeStyle&quot;,&quot;elbow&quot;:&quot;vertical&quot;,&quot;curved&quot;:0,&quot;rounded&quot;:0};" value="" vertex="1">
           <mxGeometry height="110" width="10" x="45" y="70" as="geometry" />
         </mxCell>
-        <mxCell id="TdW9oKKxsJU2AUWhq7uW-73" parent="1" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=0;dropTarget=0;collapsible=0;recursiveResize=0;outlineConnect=0;portConstraint=eastwest;newEdgeStyle={&quot;edgeStyle&quot;:&quot;elbowEdgeStyle&quot;,&quot;elbow&quot;:&quot;vertical&quot;,&quot;curved&quot;:0,&quot;rounded&quot;:0};" value="&lt;div&gt;API&lt;/div&gt;" vertex="1">
+        <mxCell id="TdW9oKKxsJU2AUWhq7uW-73" parent="1" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=0;dropTarget=0;collapsible=0;recursiveResize=0;outlineConnect=0;portConstraint=eastwest;newEdgeStyle={&quot;edgeStyle&quot;:&quot;elbowEdgeStyle&quot;,&quot;elbow&quot;:&quot;vertical&quot;,&quot;curved&quot;:0,&quot;rounded&quot;:0};" value="&lt;div&gt;BUSINESS LOGIC LAYER&lt;/div&gt;" vertex="1">
           <mxGeometry height="300" width="100" x="837.5" y="545" as="geometry" />
         </mxCell>
         <mxCell id="TdW9oKKxsJU2AUWhq7uW-74" parent="TdW9oKKxsJU2AUWhq7uW-73" style="html=1;points=[];perimeter=orthogonalPerimeter;outlineConnect=0;targetShapes=umlLifeline;portConstraint=eastwest;newEdgeStyle={&quot;edgeStyle&quot;:&quot;elbowEdgeStyle&quot;,&quot;elbow&quot;:&quot;vertical&quot;,&quot;curved&quot;:0,&quot;rounded&quot;:0};" value="" vertex="1">
@@ -442,7 +442,7 @@
         <mxCell id="7vSiNqa5pUVo_oN3f7ln-2" parent="1" style="rounded=0;whiteSpace=wrap;html=1;strokeColor=light-dark(#000000,#F1FF0F);fillColor=light-dark(#FFFF88,#FFFF00);fontColor=light-dark(#000000,#000000);" value="If user is a host, they can Create a listing of their place, the information will be validated(Checked for errors)&lt;div&gt;than the request will be processed through methods, than passed to database. Data will be saved, confirmed if saved and backend will return response to API. API will return a success if data was saved for the property becoming valid.&amp;nbsp;&lt;/div&gt;" vertex="1">
           <mxGeometry height="197.5" width="190" x="300" y="-155" as="geometry" />
         </mxCell>
-        <mxCell id="mDRcFpAJLodZhl-RSjpT-1" parent="1" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=1;dropTarget=0;collapsible=0;recursiveResize=0;outlineConnect=0;portConstraint=eastwest;newEdgeStyle={&quot;curved&quot;:0,&quot;rounded&quot;:0};" value="Presentation" vertex="1">
+        <mxCell id="mDRcFpAJLodZhl-RSjpT-1" parent="1" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=1;dropTarget=0;collapsible=0;recursiveResize=0;outlineConnect=0;portConstraint=eastwest;newEdgeStyle={&quot;curved&quot;:0,&quot;rounded&quot;:0};" value="API" vertex="1">
           <mxGeometry height="300" width="100" x="682.5" y="-675" as="geometry" />
         </mxCell>
         <mxCell id="mDRcFpAJLodZhl-RSjpT-2" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="User wants to create account" vertex="1">

@@ -1,5 +1,6 @@
 from flask_restx import Namespace, Resource, fields
 from app.services import facade
+from app.models.place import Place
 
 api = Namespace('places', description='Place operations')
 
@@ -34,14 +35,18 @@ class PlaceList(Resource):
     @api.response(400, 'Invalid input data')
     def post(self):
         """Register a new place"""
-        # Placeholder for the logic to register a new place
-        pass
+        data = api.payload
+        facade.create_place(data)
+        return "success", 201
 
     @api.response(200, 'List of places retrieved successfully')
     def get(self):
         """Retrieve a list of all places"""
-        # Placeholder for logic to return a list of all places
-        pass
+        data = facade.get_all_places()
+        if not all(isinstance(p, Place) for p in data):
+            raise TypeError("This is a place list")
+        all_places_title = [place.title for place in data]
+        return all_places_title, 200
 
 @api.route('/<place_id>')
 class PlaceResource(Resource):

@@ -9,24 +9,33 @@ api = Namespace('amenities', description='Amenity operations')
 amenity_model = api.model('Amenity', {
     'name': fields.String(required=True, description='Name of the amenity')
 })
+amenity_response = api.model('amenityResponse', {
+    'id': fields.String,
+    'name': fields.String,
+})
 @api.route('/')
 class AmenityList(Resource):
     @api.expect(amenity_model)
     @api.response(201, 'Amenity successfully created')
     @api.response(400, 'Invalid input data')
+    @api.marshal_with(amenity_response, code=201)
     def post(self):
         """Register a new amenity"""
         # Placeholder for the logic to register a new amenity
         amenity_data = api.payload
-        amenity = facade.create_amenity(amenity_data)
+        try:
+            amenity = facade.create_amenity(amenity_data)
+        except Exception as e:
+            return {'error': 'Input is invalid'}, 400
         return amenity, 201
 
     @api.response(200, 'List of amenities retrieved successfully')
+    @api.marshal_list_with(amenity_response)
     def get(self):
         """Retrieve a list of all amenities"""
         # Placeholder for logic to return a list of all amenities
         amenities = facade.get_all_amenities()
-        return amenities, 200
+        return amenities
 
 @api.route('/<amenity_id>')
 class AmenityResource(Resource):

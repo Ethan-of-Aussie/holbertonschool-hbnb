@@ -30,7 +30,7 @@ class HBnBFacade:
         return self.user_repo.get_all()
 
     def update_users(self, user_id, user_data):
-        return self.user_repo.update(user_id, user_data)
+        pass
 
     # Amenities related methods
     def create_amenity(self, amenity_date):
@@ -42,12 +42,9 @@ class HBnBFacade:
         return self.amenity_repo.get(amenity_id)
 
     def get_all_amenities(self):
-        # Placeholder
-        amenities = self.amenity_repo.get_all()
-        return [dict.__dict__ for dict in amenities]
+        return self.amenity_repo.get_all()
 
     def update_amenity(self, amenity_id, amenity_data):
-        # Not sure if done
         return self.amenity_repo.update(amenity_id, amenity_data)
 
     # Place realted methods

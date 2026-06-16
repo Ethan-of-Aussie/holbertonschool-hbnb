@@ -31,6 +31,7 @@ class UserList(Resource):
    
     @api.response(200, 'List of users retrieved successfully')
     def get(self):
+        """Retrieves all users"""
         user_list = facade.get_all_users()
         if not all(isinstance(u, User) for u in user_list):
             raise TypeError("This is user list")

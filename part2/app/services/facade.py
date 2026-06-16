@@ -42,16 +42,17 @@ class HBnBFacade:
 
     def get_all_amenities(self):
         # Placeholder
-        pass
+        amenities = self.amenity_repo.get_all()
+        return [dict.__dict__ for dict in amenities]
 
     def update_amenity(self, amenity_id, amenity_data):
-        # Placeholder
+        # Not sure if done
         return self.amenity_repo.update(amenity_id, amenity_data)
 
     # Place realted methods
     def create_place(self, place_data):
         if not isinstance(place_data["price"], float):
-            raise TypeError("price data need to be of type float") 
+            raise TypeError("price data need to be of type float")
         if place_data["price"] < 0:
             raise ValueError("price need to be positive number")
         if place_data["latitude"] < -90 or place_data["latitude"] > 90:

@@ -1,5 +1,6 @@
 from flask_restx import Namespace, Resource, fields
 from app.services import facade
+from app.models.review import Review
 
 api = Namespace('reviews', description='Review operations')
 
@@ -19,7 +20,14 @@ class ReviewList(Resource):
     def post(self):
         """Register a new review"""
         # Placeholder for the logic to register a new review
-        pass
+        review_data = api.payload
+
+        existing_review = facade.get_review(review_data['id'])
+        if existing_review:
+            return {'error': 'Review already exists'}, 400
+
+        new_review = facade.create_review(review_data)
+        return {'id': new_review.id, 'text': new_review.text, 'rating': new_review.rating, 'user_id': new_review.user_id, 'place_id': new_review.place_id}
 
     @api.response(200, 'List of reviews retrieved successfully')
     def get(self):

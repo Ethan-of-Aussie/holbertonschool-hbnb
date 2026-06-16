@@ -3,10 +3,7 @@
 
 from app.persistence.repository import InMemoryRepository
 from app.models.user import User
-<<<<<<< Updated upstream
 from app.models.place import Place
-=======
->>>>>>> Stashed changes
 from app.models.amenity import Amenity
 from app.models.review import Review
 
@@ -37,11 +34,7 @@ class HBnBFacade:
 
     # Amenities related methods
     def create_amenity(self, amenity_date):
-<<<<<<< Updated upstream
-        amenity = Amenity(**amenity_date)
-=======
         amenity = Amenity(**amenity_data)
->>>>>>> Stashed changes
         self.amenity_repo.add(amenity)
         return amenity
 
@@ -52,12 +45,8 @@ class HBnBFacade:
         return self.amenity_repo.get_all()
 
     def update_amenity(self, amenity_id, amenity_data):
-<<<<<<< Updated upstream
         return self.amenity_repo.update(amenity_id, amenity_data)
-=======
         # Placeholder
-        amenity =
->>>>>>> Stashed changes
 
     # Place realted methods
     def create_place(self, place_data):

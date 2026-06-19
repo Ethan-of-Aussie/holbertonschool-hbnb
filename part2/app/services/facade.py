@@ -59,8 +59,13 @@ class HBnBFacade:
         return self.amenity_repo.get_all()
 
     def update_amenity(self, amenity_id, amenity_data):
+        name = amenity_data.get("name")
+
+        if not name or not isinstance(name, str):
+            raise ValueError("Invalid name input")
+        if any(char.isdigit() for char in name):
+            raise ValueError("Cannot input numbers")
         return self.amenity_repo.update(amenity_id, amenity_data)
-        # Placeholder
 
     # Place realted methods
     def create_place(self, place_data):

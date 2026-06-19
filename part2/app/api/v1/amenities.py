@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 
-from flask_restx import Namespace, Resource, fields
+from flask_restx import Namespace, Resource, fields, marshal
 from app.services import facade
 
 api = Namespace('amenities', description='Amenity operations')
@@ -18,15 +18,14 @@ class AmenityList(Resource):
     @api.expect(amenity_model, validation=True)
     @api.response(201, 'Amenity successfully created')
     @api.response(400, 'Invalid input data')
-    @api.marshal_with(amenity_response)
     def post(self):
         """Register a new amenity"""
         amenity_data = api.payload
         try:
             amenity = facade.create_amenity(amenity_data)
-        except ValueError:
-            return {'error': 'Input is invalid'}, 400
-        return amenity, 201
+            return marshal(amenity, amenity_response), 201
+        except ValueError as e:
+            return {"error": str(e)}, 400
 
     @api.response(200, 'List of amenities retrieved successfully')
     @api.marshal_list_with(amenity_response)
@@ -39,13 +38,12 @@ class AmenityList(Resource):
 class AmenityResource(Resource):
     @api.response(200, 'Amenity details retrieved successfully')
     @api.response(404, 'Amenity not found')
-    @api.marshal_with(amenity_response)
     def get(self, amenity_id):
         """Get amenity details by ID"""
         amenity = facade.get_amenity(amenity_id)
-        if not amenity:
+        if amenity is None:
             return {'error': 'Amenity not found'}, 404
-        return amenity, 200
+        return marshal(amenity, amenity_response),  200
 
     @api.expect(amenity_model, validation=True)
     @api.response(200, 'Amenity updated successfully')
@@ -56,8 +54,9 @@ class AmenityResource(Resource):
         amenity = facade.get_amenity(amenity_id)
         if amenity is None:
             return {'error': 'Amenity not found'}, 404
-
-        amenity_data = api.payload
-        facade.update_amenity(amenity_id, amenity_data)
-
+        try:
+            amenity_data = api.payload
+            facade.update_amenity(amenity_id, amenity_data)
+        except ValueError as e:
+            return {"error": str(e)}, 400
         return {"message": "Amenity updated successfully"}, 200

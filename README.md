@@ -34,7 +34,7 @@ Documents:
 
   Shows the overall content of part 1 in one file. Contains all the diagrams with appropriate explaination.
 
-  ### Part 2
+### Part 2
 
   This part contains the implementation of the designs from Part 1 which has been divided into 5 sections.
 

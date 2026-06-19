@@ -6,30 +6,30 @@ Getting started in making the Hbnb project!
 
 Technical Documents:
 
-High Level Package Diagram
+- High Level Package Diagram
 
-Shows the relationship between our three layers (Presentation, Business Logic, Persistance)
+    Shows the relationship between our three layers (Presentation, Business Logic, Persistance)
 
-Class Diagram
+- Class Diagram
 
-Shows the relationship between the four classes that we are planning to use which are:
+    Shows the relationship between the four classes that we are planning to use which are:
 
-* User
-* Place
-* Review
-* Amenity
+    * User
+    * Place
+    * Review
+    * Amenity
 
-The diagram also contains information about the attributes and methods of the individual classes.
+    The diagram also contains information about the attributes and methods of the individual classes.
 
-Sequence Diagram
+- Sequence Diagram
 
-Shows the design of our API calls which are:
+  Shows the design of our API calls which are:
+  
+    * User Registration
+    * Place Creation
+    * Review Submission
+    * Fetch List of Places
 
-* User Registration
-* Place Creation
-* Review Submission
-* Fetch List of Places
+- Technical Document
 
-Technical Document
-
-Shows the overall content of part 1 in one file. Contains all the diagrams with appropriate explaination.
+  Shows the overall content of part 1 in one file. Contains all the diagrams with appropriate explaination.

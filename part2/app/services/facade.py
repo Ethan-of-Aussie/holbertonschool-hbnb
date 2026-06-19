@@ -21,10 +21,10 @@ class HBnBFacade:
         email = user_data.get("email")
 
         if not all([first_name, last_name]) or not all(isinstance(x, str) for x in [first_name, last_name]):
-            raise ValueError("Error": "Invalid name fields")
+            raise ValueError("Invalid name fields")
 
         if not email or not isinstance(email, str) or "@" not in email:
-            raise ValueError("Error": "Invalid name fields")
+            raise ValueError("Invalid email")
 
         user = User(**user_data)
         self.user_repo.add(user)

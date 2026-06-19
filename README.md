@@ -4,7 +4,7 @@ Getting started in making the Hbnb project!
 ## Contents
 ### Part 1
 
-Technical Documents:
+Documents:
 
 - High Level Package Diagram
 
@@ -33,3 +33,39 @@ Technical Documents:
 - Technical Document
 
   Shows the overall content of part 1 in one file. Contains all the diagrams with appropriate explaination.
+
+  ### Part 2
+
+  This part contains the implementation of the designs from Part 1 which has been divided into 5 sections.
+
+  - api
+
+    Contains the design and implementation of different end points for the 4 classes.
+
+  - models
+
+    Contains the object structure of each class.
+
+  - persistence
+
+    Contains the repository which has the methods that the methods in facade reference.
+
+  - services
+
+    Contains the facade which does the bulk of the operation called by the api.
+
+  - tests
+
+    Contains test files to test each of the end points of the 4 classes.
+
+  Operation of part 2
+
+  To get started and using the implementation, please follow the steps listed below:
+
+  - source venv/bin/activate
+  - pip install -r requirements.txt (to install the required packages)
+  - python3 run.py (to run the server)
+  - User:
+        * Creation: curl -X POST http://localhost:5000/api/v1/users/ \
+  -H "Content-Type: application/json" \
+  -d '{"first_name": "John", "last_name": "Doe", "email": "john.doe@example.com"}'

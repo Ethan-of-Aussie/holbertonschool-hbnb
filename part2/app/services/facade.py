@@ -103,9 +103,10 @@ class HBnBFacade:
         user = self.user_repo.get(user_id)
 
         place_id = review_data.get("place_id")
-        place = self.place_repo("place_id")
+        place = self.place_repo.get("place_id")
 
-        rating = review_data.get("rating")
+        rating = int(review_data.get("rating"))
+        text = review_data.get("text")
 
         if not user:
             raise ValueError("User not found")
@@ -116,7 +117,13 @@ class HBnBFacade:
         if rating < 1 or rating > 5:
             raise ValueError("Rating should be between 1 and 5")
 
-        review = Review(**review_data)
+        review = Review(
+                text=text,
+                rating=rating,
+                place=place,
+                user=user
+                )
+
         self.review_repo.add(review)
         return review
 
@@ -127,12 +134,16 @@ class HBnBFacade:
         return self.review_repo.get_all()
 
     def get_reviews_by_place(self, place_id):
-        # Placeholder
-        pass
+        return self.review_repo.get(place_id)
 
     def update_review(self, review_id, review_data):
         return self.review_repo.update(review_id, review_data)
 
     def delete_review(self, review_id):
-        # Placeholder
-        pass
+        review = self.review_repo.get(review_id)
+
+        if not review:
+            raise ValueError("Review not found")
+
+        self.review_repo.delete(review_id)
+        return review

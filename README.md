@@ -76,6 +76,7 @@ Documents:
     * Retrieval:
 
       curl -X GET http://localhost:5000/api/v1/users/ (for all users)
+      
       curl -X GET http://localhost:5000/api/v1/users/<user_id> (for specific user based on id)
 
     * Update:
@@ -94,8 +95,9 @@ Documents:
        -d '{"name": "Sink"}'
 
     * Retrieval:
-   
+
       curl -X GET http://localhost:5000/api/v1/amenities/ (for all amenities)
+      
       curl -X GET http://localhost:5000/api/v1/amenities/<amenity_id> (for specific amenity based on id)
 
     * Update:

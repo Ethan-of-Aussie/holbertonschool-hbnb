@@ -1,7 +1,7 @@
-#!/usr/bin.python3
+#!/usr/bin/python3
+"""Testing review endpoint"""
 import unittest
 from app import create_app
-"""Testing review endpoint"""
 
 
 class TestReviewEndpoints(unittest.TestCase):

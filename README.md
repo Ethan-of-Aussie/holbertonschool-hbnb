@@ -69,8 +69,8 @@ Documents:
 
     * Creation:
 
-      curl -X POST http://localhost:5000/api/v1/users/ \\
-      -H "Content-Type: application/json" \\
+      curl -X POST http://localhost:5000/api/v1/users/ \
+      -H "Content-Type: application/json" \
       -d '{"first_name": "John", "last_name": "Doe", "email": "john.doe@example.com"}'
 
     * Retrieval:

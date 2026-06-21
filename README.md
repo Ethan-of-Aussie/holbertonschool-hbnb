@@ -65,6 +65,7 @@ Documents:
   - source venv/bin/activate (to run in a virtual environment outside of Holberton sandbox)
   - pip install -r requirements.txt (to install the required packages)
   - python3 run.py (to run the server)
+  
   - User:
 
     * Creation:
@@ -106,3 +107,6 @@ Documents:
       -H "Content-Type: application/json" \
       -d '{"name": "Cubards"}'
       
+  - Place:
+
+  - Review:

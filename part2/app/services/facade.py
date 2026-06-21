@@ -81,7 +81,6 @@ class HBnBFacade:
             raise ValueError("longitude must be between -180 and 180")
 
         place = Place(**place_data)
-        print("pppplace {}".format(place))
         self.place_repo.add(place)
         return place
 

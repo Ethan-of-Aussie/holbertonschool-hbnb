@@ -1,4 +1,4 @@
-from flask_restx import Namespace, Resource, fields
+from flask_restx import Namespace, Resource, fields, marshal
 from app.services import facade
 from app.models.place import Place
 from app.models.amenity import Amenity
@@ -31,22 +31,6 @@ place_model = api.model('Place', {
     'amenities': fields.List(fields.String, required=True, description="List of amenities ID's"),
     'reviews': fields.List(fields.Nested(review_model), description='List of reviews')
 })
-user_model = api.model(
-    'User',
-    {
-        "id": fields.String,
-        "first_name": fields.String,
-        "last_name": fields.String,
-        "email": fields.String
-    }
-)
-amenity_model = api.model(
-    'amenity_model',
-    {
-        "id": fields.String,
-        "name": fields.String
-    }
-)
 place_id_model = api.model(
     'place_id',
     {
@@ -57,6 +41,18 @@ place_id_model = api.model(
         "longitude": fields.Float,
         "owner": fields.Nested(user_model),
         "amenities": fields.List(fields.Nested(amenity_model))
+    }
+)
+place_post_model = api.model(
+    'place_most',
+    {
+        "id": fields.String,
+        "title": fields.String,
+        "description": fields.String,
+        "price": fields.Float,
+        "latitude": fields.Float,
+        "longitude": fields.Float,
+        "owner_id": fields.String(attribute="owner.id")
     }
 )
 
@@ -80,13 +76,9 @@ class PlaceList(Resource):
             for amenity_data in data["amenities"]:
                 new_amenity = Amenity(amenity_data)
                 new_place.add_amenity(new_amenity)
-            created_place = new_place.__dict__
         except Exception as e:
             return {"error": str(e)}, 400
-        fields = ["id", "title", "description", "price", "latitude", "longitude"]
-        place_dictionary = {field: created_place[field] for field in fields}
-        place_dictionary["owner_id"] = created_place["owner"].__dict__["id"]
-        return place_dictionary, 201
+        return marshal(new_place, place_post_model) , 201
 
     @api.response(200, 'List of places retrieved successfully')
     def get(self):

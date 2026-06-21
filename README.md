@@ -79,10 +79,14 @@ Documents:
 	}'
 	```
     * Retrieval:
-
+      For all users
+	```
       curl -X GET http://localhost:5000/api/v1/users/ (for all users)
-      
-      curl -X GET http://localhost:5000/api/v1/users/<user_id> (for specific user based on id)
+      	```
+      For specific user based on id
+	```
+      curl -X GET http://localhost:5000/api/v1/users/<user_id>
+	```
 
     * Update:
       	```
@@ -104,14 +108,17 @@ Documents:
        -d '{"name": "Sink"}'
 	```
     * Retrieval:
-
-      curl -X GET http://localhost:5000/api/v1/amenities/ (for all amenities)
-      
-      curl -X GET http://localhost:5000/api/v1/amenities/<amenity_id> (for specific amenity based on id)
-
+      For all amenities
+	```
+      curl -X GET http://localhost:5000/api/v1/amenities/
+      	```
+      For specific amenity based on id
+	```
+      curl -X GET http://localhost:5000/api/v1/amenities/<amenity_id>
+	```
     * Update:
 	```
-      curl -X GET http://localhost:5000/api/v1/amenities/<amenity_id> \
+      curl -X PUT http://localhost:5000/api/v1/amenities/<amenity_id> \
       -H "Content-Type: application/json" \
       -d '{"name": "Cubards"}'
  	```     

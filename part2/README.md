@@ -15,6 +15,7 @@ Listed below are some example trial codes that can be used to check the function
 
     * Creation:
 
+
     ```
     curl -X POST http://localhost:5000/api/v1/users/ \
       -H "Content-Type: application/json" \

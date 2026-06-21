@@ -15,8 +15,16 @@ review_model = api.model('Review', {
 review_output = api.model('Review', {
     'id': fields.String,
     'text': fields.String,
-    'rating': fields.Integer
+    'rating': fields.Integer,
+    'user_id': fields.String(attribute="user.id"),
+    'place_id': fields.String(attribute="place.id")
     })
+
+review_list_output = api.model('Review List Output', {
+    'id': fields.String,
+    'text': fields.String,
+    'rating': fields.Integer,  
+})
 
 @api.route('/')
 class ReviewList(Resource):
@@ -26,25 +34,23 @@ class ReviewList(Resource):
     def post(self):
         """Register a new review"""
         review_data = api.payload
-
-        """
-        existing_review = facade.get_review(review_data['review_id'])
-        if existing_review:
-            return {'error': 'Review already exists'}, 400
-        """
+        place = facade.get_place(review_data.get("place_id"))
+        user = facade.get_user(review_data.get("user_id"))
+        fields = ["text", "rating"]
+        review_params = {f:review_data[f] for f in fields}
+        review_params["place"] = place
+        review_params["user"] = user
         try:
-            new_review = facade.create_review(review_data)
-            return marshal(new_review, review_data), 201
+            new_review = facade.create_review(review_params)
+            return marshal(new_review, review_output), 201
         except ValueError as e:
             return {"error": str(e)}, 400
 
-        return new_review, 201
-
     @api.response(200, 'List of reviews retrieved successfully')
-    @api.marshal_list_with(review_output)
+    @api.marshal_list_with(review_list_output)
     def get(self):
         """Retrieve a list of all reviews"""
-        review_list = facade.get_all_reviews
+        review_list = facade.get_all_reviews()
         return review_list, 200
 
 @api.route('/<review_id>')

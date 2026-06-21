@@ -10,21 +10,34 @@ Operation of part 2
 
 To get started and using the implementation, please follow the steps listed below:
 
-  - Running virtual environment
-	```
-    source venv/bin/activate
-  	```
+- Cloning the repo
   
-  - ignore first step if using Holberton sandbox (ubuntu_2204)
-  - Target directory
+	```
+  git clone https://github.com/Ethan-of-Aussie/holbertonschool-hbnb.git
+ 	```
+  
+- Navigating to target directory
+  
     ```
 	cd holbertonschool-hbnb/part2/
     ```
-  - Installing required packages
+
+- Activating virtual environment
+  
+	```
+    source venv/bin/activate
+  	```
+
+- Ignore previous step if using Holberton sandbox (ubuntu_2204)
+
+- Installing required packages
+  
     ```
     pip install -r requirements.txt
     ```
-  - Running the server
+
+- Running the server
+  
 	```
     python3 run.py
   	```

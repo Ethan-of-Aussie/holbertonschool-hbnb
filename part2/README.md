@@ -135,7 +135,7 @@ Listed below are some example trial codes that can be used to check the function
 	For userr_id and place_id please use the generated user_id and place_id when creating user and place.
 
 	```
- 	curl -X POST http://localhost:5000/api/v1/places/ \
+ 	curl -X POST http://localhost:5000/api/v1/reviews/ \
       -H "Content-Type: application/json" \
       -d '{
   		"text": "Great place to stay!",
@@ -156,7 +156,7 @@ Listed below are some example trial codes that can be used to check the function
     For specific review based on id
 
     ```
-      curl -X GET http://localhost:5000/api/v1/reviewss/<review_id>
+      curl -X GET http://localhost:5000/api/v1/reviews/<review_id>
 	```
   
     For all reviews for a specific place

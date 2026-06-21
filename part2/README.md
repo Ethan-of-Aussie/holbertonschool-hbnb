@@ -133,7 +133,7 @@ Listed below are some example trial codes that can be used to check the function
 
 	* Creation:
 
-	For userr_id and place_id please use the generated user_id and place_id when creating user and place.
+	For user_id and place_id please use the generated user_id and place_id when creating user and place.
 
 	```
  	curl -X POST http://localhost:5000/api/v1/reviews/ \

@@ -126,7 +126,7 @@ class PlaceReviewList(Resource):
         if not place:
             return {"error": "place not found"}, 400
         reviews = place.reviews
-        if reviews or len(reviews) == 0:
+        if not reviews or len(reviews) == 0:
             return {"message": "no review found"}, 200
         
         return marshal(reviews, review_list_output), 200

@@ -60,4 +60,4 @@ Documents:
 
     Contains test files to test each of the end points of the 4 classes.
 
-	Please navigate into the "part2" folder to see the listed examples of trial codes that you can use to test the design.
+Please navigate into the "part2" folder to see the listed examples of trial codes that you can use to test the design.

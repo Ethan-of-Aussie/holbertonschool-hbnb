@@ -15,7 +15,6 @@ Listed below are some example trial codes that can be used to check the function
 
     * Creation:
 
-
     ```
     curl -X POST http://localhost:5000/api/v1/users/ \
       -H "Content-Type: application/json" \
@@ -28,13 +27,13 @@ Listed below are some example trial codes that can be used to check the function
 
     * Retrieval:
 
-      For all users
+    For all users
 
     ```
       curl -X GET http://localhost:5000/api/v1/users/
 	```
   
-      For specific user based on id
+    For specific user based on id
 	
    	```
       curl -X GET http://localhost:5000/api/v1/users/<user_id>
@@ -64,13 +63,13 @@ Listed below are some example trial codes that can be used to check the function
   
     * Retrieval:
 
-      For all amenities
+    For all amenities
 
     ```
       curl -X GET http://localhost:5000/api/v1/amenities/
     ```
   
-      For specific amenity based on id
+	For specific amenity based on id
 
     ```
       curl -X GET http://localhost:5000/api/v1/amenities/<amenity_id>
@@ -105,13 +104,13 @@ Listed below are some example trial codes that can be used to check the function
 
     * Retrieval:
 
-      For all places
+    For all places
 
     ```
       curl -X GET http://localhost:5000/api/v1/places/
    	```
   
-      For specific place based on id
+	For specific place based on id
 	
     ```
       curl -X GET http://localhost:5000/api/v1/places/<place_id>
@@ -148,19 +147,19 @@ Listed below are some example trial codes that can be used to check the function
 
     * Retrieval:
 
-      For all reviews
+    For all reviews
 	
     ```
       curl -X GET http://localhost:5000/api/v1/reviews/
     ```
   
-      For specific review based on id
+    For specific review based on id
 
     ```
       curl -X GET http://localhost:5000/api/v1/reviewss/<review_id>
 	```
   
-      For all reviews for a specific place
+    For all reviews for a specific place
     
 	```
       curl -X GET http://localhost:5000/api/v1/places/<place_id>/reviews

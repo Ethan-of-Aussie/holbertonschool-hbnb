@@ -1,15 +1,35 @@
 # Business logic and API implementation
 
- Operation of part 2
+## Requirements
+
+- Python 3.x
+- Flask
+- Flask-RESTX
+
+Operation of part 2
 
 To get started and using the implementation, please follow the steps listed below:
 
-  - source venv/bin/activate (to run in a virtual environment outside of Holberton sandbox)
+  - Running virtual environment
+	```
+    source venv/bin/activate
+  	```
+  
   - ignore first step if using Holberton sandbox (ubuntu_2204)
-  - pip install -r requirements.txt (to install the required packages)
-  - python3 run.py (to run the server)
-
-Listed below are some example trial codes that can be used to check the functionality of the api calls.
+  - Target directory
+    ```
+	cd holbertonschool-hbnb/part2/
+    ```
+  - Installing required packages
+    ```
+    pip install -r requirements.txt
+    ```
+  - Running the server
+	```
+    python3 run.py
+  	```
+  
+Listed below are some example trial codes (curl) that can be used to check the functionality of the api calls.
   
   - User:
 

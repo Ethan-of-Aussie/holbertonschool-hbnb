@@ -16,32 +16,39 @@ Listed below are some example trial codes that can be used to check the function
     * Creation:
 
     ```
-      curl -X POST http://localhost:5000/api/v1/users/ \
+
+    curl -X POST http://localhost:5000/api/v1/users/ \
       -H "Content-Type: application/json" \
       -d '{
 		"first_name": "John", 
 		"last_name": "Doe", 
 		"email": "john.doe@example.com"
 		}'
-	  ```
+
+	```
 
     * Retrieval:
 
       For all users
 
     ```
+    
       curl -X GET http://localhost:5000/api/v1/users/
- 	  ```
+ 	
+	```
   
       For specific user based on id
 	
-    ```
+   	```
+    
       curl -X GET http://localhost:5000/api/v1/users/<user_id>
-	  ```
+    
+	```
 
     * Update:
 
     ```
+    
       curl -X PUT http://localhost:5000/api/v1/users/<user_id> \
       -H "Content-Type: application/json" \
       -d '{
@@ -49,39 +56,48 @@ Listed below are some example trial codes that can be used to check the function
 		"last_name": "Cena", 
 		"email": "john.cena@example.com"
 		}'
-	  ```
+    
+	```
     
   - Amenity:
  
     * Creation:
 
     ```
+    
        curl -X POST http://localhost:5000/api/v1/amenities/ \
        -H "Content-Type: application/json" \
        -d '{"name": "Sink"}'
-	  ```
+    
+	```
   
     * Retrieval:
 
       For all amenities
 
     ```
+    
       curl -X GET http://localhost:5000/api/v1/amenities/
- 	  ```
+
+    ```
   
       For specific amenity based on id
 
     ```
+    
       curl -X GET http://localhost:5000/api/v1/amenities/<amenity_id>
-	  ```
+
+	```
   
     * Update:
 	
     ```
+    
       curl -X PUT http://localhost:5000/api/v1/amenities/<amenity_id> \
       -H "Content-Type: application/json" \
       -d '{"name": "Cubards"}'
- 	  ```
+    
+ 	 ```
   
   - Place:
 
@@ -89,7 +105,8 @@ Listed below are some example trial codes that can be used to check the function
 
 	For owner_id, please use the generated user_id when creating user.
 
-	  ```
+	```
+   
  	curl -X POST http://localhost:5000/api/v1/places/ \
       -H "Content-Type: application/json" \
       -d '{
@@ -100,25 +117,31 @@ Listed below are some example trial codes that can be used to check the function
   		"longitude": -122.4194,
   		"owner_id": "" 
 		}'
-	  ```
+   
+	```
 
     * Retrieval:
 
       For all places
 
     ```
+    
       curl -X GET http://localhost:5000/api/v1/places/
+    
    	```
   
       For specific place based on id
 	
     ```
+    
       curl -X GET http://localhost:5000/api/v1/places/<place_id>
-	  ```
+	
+	```
 
     * Update:
 
     ```
+    
       curl -X PUT http://localhost:5000/api/v1/places/<place_id> \
       -H "Content-Type: application/json" \
       -d '{
@@ -126,7 +149,8 @@ Listed below are some example trial codes that can be used to check the function
   		"description": "An upscale place to stay",
   		"price": 200.0
 		}'
-	  ```
+
+	```
 
   - Review:
 
@@ -135,6 +159,7 @@ Listed below are some example trial codes that can be used to check the function
 	For userr_id and place_id please use the generated user_id and place_id when creating user and place.
 
 	```
+  
  	curl -X POST http://localhost:5000/api/v1/places/ \
       -H "Content-Type: application/json" \
       -d '{
@@ -143,41 +168,53 @@ Listed below are some example trial codes that can be used to check the function
   		"user_id": "3fa85f64-5717-4562-b3fc-2c963f66afa6",
   		"place_id": "1fa85f64-5717-4562-b3fc-2c963f66afa6"
 		}'
+  
 	```
 
     * Retrieval:
+
       For all reviews
 	
     ```
+    
       curl -X GET http://localhost:5000/api/v1/reviews/
- 	  ```
+
+    ```
   
       For specific review based on id
 
     ```
+    
       curl -X GET http://localhost:5000/api/v1/reviewss/<review_id>
-	  ```
+
+	```
   
       For all reviews for a specific place
     
-	  ```
+	```
+   
       curl -X GET http://localhost:5000/api/v1/places/<place_id>/reviews
-	  ```
+   
+	```
 
     * Update:
   
     ```
+    
       curl -X PUT http://localhost:5000/api/v1/reviews/<review_id> \
       -H "Content-Type: application/json" \
       -d '{
   		"text": "Amazing stay!",
   		"rating": 4
 		}'
-	  ```
+    
+	```
 
     * Delete:
     
     ```
+    
       curl -X DELETE http://localhost:5000/api/v1/reviews/<review_id> \
-	  ```
+    
+	```
     

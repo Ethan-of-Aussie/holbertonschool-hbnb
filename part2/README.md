@@ -98,7 +98,8 @@ Listed below are some example trial codes that can be used to check the function
   		"price": 100.0,
   		"latitude": 37.7749,
   		"longitude": -122.4194,
-  		"owner_id": "" 
+  		"owner_id": ""
+  		"amenities": []
 		}'
 	```
 
@@ -179,7 +180,7 @@ Listed below are some example trial codes that can be used to check the function
     * Delete:
     
     ```   
-      curl -X DELETE http://localhost:5000/api/v1/reviews/<review_id> \
+      curl -X DELETE http://localhost:5000/api/v1/reviews/<review_id>
 	```
     
 

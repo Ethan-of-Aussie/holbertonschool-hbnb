@@ -37,10 +37,16 @@ class ReviewList(Resource):
         """Register a new review"""
         review_data = api.payload
         place = facade.get_place(review_data.get("place_id"))
-        user = facade.get_user(review_data.get("user_id"))
+        if place is None:
+            return {"error": "Place not found"}, 400
+        
+        user = facade.get_user(get_jwt_identity())
 
-        if not place or not user:
-            return {"error": "place or user dose not exist"}, 400
+        if get_jwt_identity() == place.owner.id:
+            return {"error": "Review can't be created by the place owner"}, 400
+        for review in place.reviews:
+            if review.user.id == get_jwt_identity():
+                return {"error": "Only one review is allowed per place"}, 400
 
         fields = ["text", "rating"]
         review_params = {f:review_data[f] for f in fields}
@@ -81,6 +87,9 @@ class ReviewResource(Resource):
     def put(self, review_id):
         """Update a review's information"""
         review_data = api.payload
+        founded_review = facade.get_review(review_id)
+        if get_jwt_identity() != founded_review.user.id:
+            {"error": "Users can only modify reviews they created"}
         review = facade.update_review(review_id, review_data)
         if not review:
             return {'error': "review is not found"}, 400
@@ -92,6 +101,9 @@ class ReviewResource(Resource):
     @api.response(404, 'Review not found')
     def delete(self, review_id):
         """Delete a review"""
+        founded_review = facade.get_review(review_id)
+        if get_jwt_identity() != founded_review.user.id:
+            {"error": "Users can only delete reviews they created"}
         try:
             facade.delete_review(review_id)
             return {'success': 'Review successfully deleted'}, 200

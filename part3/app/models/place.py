@@ -1,16 +1,12 @@
 from app.models.base_model import BaseModel
+from app.extensions import db
 
 class Place(BaseModel):
-    def __init__(self, title, description, price, latitude, longitude, owner):
-        super().__init__()
-        self.title = title
-        self.description = description
-        self.price = price
-        self.latitude = latitude
-        self.longitude = longitude
-        self.owner = owner
-        self.reviews = []  # List to store related reviews
-        self.amenities = []  # List to store related amenities
+    title = db.Column(db.String(50), nullable = False)
+    description = db.Column(db.String(254), nullable = False)
+    price = db.Column(db.Float, nullable = False)
+    latitude = db.Column(db.Float, nullable = False)
+    longitude = db.Column(db.Float, nullable = False)
 
     def add_review(self, review):
         """Add a review to the place."""

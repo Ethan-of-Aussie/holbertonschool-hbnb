@@ -1,5 +1,6 @@
 from app.models.base_model import BaseModel
 from app.extensions import db
+from sqlalchemy import Column, Integer, String, ForeignKey
 
 class Place(BaseModel):
     title = db.Column(db.String(50), nullable = False)
@@ -7,6 +8,7 @@ class Place(BaseModel):
     price = db.Column(db.Float, nullable = False)
     latitude = db.Column(db.Float, nullable = False)
     longitude = db.Column(db.Float, nullable = False)
+    user_id = Column(Integer, ForeignKey('users.id'), nullable = False)
 
     def add_review(self, review):
         """Add a review to the place."""

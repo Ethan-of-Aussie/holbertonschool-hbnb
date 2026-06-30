@@ -3,6 +3,7 @@
 
 from app.models.base_model import BaseModel
 from app.extensions import bcrypt, db
+from sqlalchemy.orm import relationship
 
 class User(BaseModel):
     __tablename__ = 'users'
@@ -12,6 +13,7 @@ class User(BaseModel):
     email = db.Column(db.String(120), nullable=False, unique=True)
     password = db.Column(db.String(128), nullable=False)
     is_admin = db.Column(db.Boolean, default=False)
+    children = relationship("Place", backref="users", lazy=True)
 
     def hash_password(self, password):
         """Hashes the password before storing it."""

@@ -1,7 +1,7 @@
-DELETE FROM users;
-DELETE FROM places;
-DELETE FROM amenities;
-DELETE FROM place_amenity;
+-- DELETE FROM users;
+-- DELETE FROM places;
+-- DELETE FROM amenities;
+-- DELETE FROM place_amenity;
 
 -- DROP TABLE amenities;
 

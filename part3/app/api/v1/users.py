@@ -71,6 +71,8 @@ class UserResource(Resource):
            return {"error": "User not found"}, 404
 
        if get_jwt_identity() != user_id:
-           return {"error": "Unauthorized: cannot update another user"}
+           return {"error": "Unauthorized: cannot update another user"}, 403
+       if "password" in user_data or "email" in user_data:
+           return {"error": "Cannot edit password or email"}, 400
        facade.update_users(user_id, user_data)
        return {'success': 'User updated'}, 200

@@ -119,12 +119,12 @@ class PlaceResource(Resource):
         if founded_place is None:
             return {"error": "place not founded"}, 404
         if founded_place.owner.id != get_jwt_identity():
-            return {"error": "only owner of the place is allowed to modify"}, 400
+            return {"error": "only owner of the place is allowed to modify"}, 403
         is_updated = facade.update_place(place_id, data)
         if not is_updated:
             return {"error": "place not founded"}, 404
         return {"message": "success"}, 200
-    
+
 @api.route('/<place_id>/reviews')
 class PlaceReviewList(Resource):
     @api.response(200, 'List of reviews for the place retrieved successfully')
@@ -137,6 +137,5 @@ class PlaceReviewList(Resource):
         reviews = place.reviews
         if not reviews or len(reviews) == 0:
             return {"message": "no review found"}, 200
-        
+
         return marshal(reviews, review_list_output), 200
-        

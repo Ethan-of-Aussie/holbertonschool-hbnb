@@ -89,7 +89,7 @@ class ReviewResource(Resource):
         review_data = api.payload
         founded_review = facade.get_review(review_id)
         if get_jwt_identity() != founded_review.user.id:
-            return {"error": "Users can only modify reviews they created"}
+            return {"error": "Users can only modify reviews they created"}, 403
         review = facade.update_review(review_id, review_data)
         if not review:
             return {'error': "review is not found"}, 400
@@ -103,7 +103,7 @@ class ReviewResource(Resource):
         """Delete a review"""
         founded_review = facade.get_review(review_id)
         if get_jwt_identity() != founded_review.user.id:
-            {"error": "Users can only delete reviews they created"}
+            return {"error": "Users can only delete reviews they created"}, 403
         try:
             facade.delete_review(review_id)
             return {'success': 'Review successfully deleted'}, 200

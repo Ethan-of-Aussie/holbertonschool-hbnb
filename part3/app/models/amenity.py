@@ -6,4 +6,3 @@ class Amenity(BaseModel):
     __tablename__ = "amenities"
 
     name = db.Column(db.String(128), nullable = False)
-    place_id = Column(Integer, ForeignKey("places.id"), nullable = False)

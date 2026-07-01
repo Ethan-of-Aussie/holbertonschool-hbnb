@@ -160,5 +160,7 @@ class AdminPlaceModify(Resource):
             "latitude": updated_place.latitude,
             "longitude": updated_place.longitude,
             "owner_id": updated_place.owner_id,
+            "amenities": updated_place.amenities,
+            "reviews": updated_place.reviews,
             "message": "Place updated successfully"
         }, 200

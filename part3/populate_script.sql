@@ -13,7 +13,7 @@ INSERT INTO users (id, first_name, last_name, email, password, is_admin) VALUES
 ('9b17d3fd-4e2b-4c9a-b0db-9e3b50e3f003', 'Alice', 'Brown', 'alice@example.com', '$2y$10$ETNOKqNTfNym3y7lyn7Sw.fBjjyeViqWypxFOE2/MTffwhEoIfpAe', 0),
 ('36c9050e-ddd3-4c3b-9731-9f487208bbc1', 'Admin', 'HBnB', 'admin@hbnb.io', '$2y$10$i207gAEK9fOUmU1fpp/eGOIAMToVocjzSM.Kxh2bla9JMDlog.e9S', 1);
 
-INSERT INTO places (id, title, description, price, latitude, longitude, user_id) VALUES
+INSERT INTO places (id, title, description, price, latitude, longitude, owner_id) VALUES
 (
     'f31a4e7a-1111-4444-8888-aaaaaaaaaaaa',
     'Beach House',
@@ -22,7 +22,8 @@ INSERT INTO places (id, title, description, price, latitude, longitude, user_id)
     -37.8136,
     144.9631,
     '9b17d3fd-4e2b-4c9a-b0db-9e3b50e3f001'
-),
+);
+INSERT INTO places (id, title, description, price, latitude, longitude, owner_id) VALUES
 (
     'f31a4e7a-2222-4444-8888-bbbbbbbbbbbb',
     'City Apartment',
@@ -32,6 +33,7 @@ INSERT INTO places (id, title, description, price, latitude, longitude, user_id)
     144.9650,
     '9b17d3fd-4e2b-4c9a-b0db-9e3b50e3f002'
 );
+INSERT INTO places (id, title, description, price, latitude, longitude, owner_id) VALUES
 (
     'b9b81b15-6540-4eea-961a-5c39c5baba2e',
     'Town house',

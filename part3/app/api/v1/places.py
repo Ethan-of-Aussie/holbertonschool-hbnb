@@ -118,7 +118,7 @@ class PlaceResource(Resource):
         founded_place = facade.get_place(place_id)
         if founded_place is None:
             return {"error": "place not founded"}, 404
-        if founded_place.owner.id != get_jwt_identity():
+        if founded_place.owner_id != get_jwt_identity():
             return {"error": "only owner of the place is allowed to modify"}, 403
         is_updated = facade.update_place(place_id, data)
         if not is_updated:

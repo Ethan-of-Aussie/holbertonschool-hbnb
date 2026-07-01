@@ -135,7 +135,7 @@ class AdminPlaceModify(Resource):
         current_user = get_jwt()
         # Set is_admin default to False if not exists
         is_admin = current_user.get('is_admin', False)
-        user_id = current_user.get('id')
+        user_id = get_jwt_identity()
 
         place_data = request.json
         if not place_data:

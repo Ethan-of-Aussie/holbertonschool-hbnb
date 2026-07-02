@@ -147,7 +147,7 @@ class AdminPlaceModify(Resource):
         if place is None:
             return {"error": "place not founded"}, 404
 
-        if not is_admin and place.owner_id != user_id:
+        if not is_admin:
             return {'error': 'Unauthorized action'}, 403
 
         updated_place = facade.update_place(place_id, place_data)

@@ -75,9 +75,6 @@ class PlaceList(Resource):
             place_params = {p_f:data[p_f] for p_f in params_field}
             place_params["owner"] = user
             new_place = facade.create_place(place_params)
-            for amenity_data in data["amenities"]:
-                new_amenity = Amenity(amenity_data)
-                new_place.add_amenity(new_amenity)
         except Exception as e:
             return {"error": str(e)}, 400
         return marshal(new_place, place_post_model) , 201

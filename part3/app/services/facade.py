@@ -21,15 +21,15 @@ class HBnBFacade:
 
     # User related methods
     def create_user(self, user_data):
-         first_name = user_data.get("first_name")
-         last_name = user_data.get("last_name")
-         email = user_data.get("email")
+        first_name = user_data.get("first_name")
+        last_name = user_data.get("last_name")
+        email = user_data.get("email")
 
-         if not all([first_name, last_name]) or not all(isinstance(x, str) for x in [first_name, last_name]):
-             raise ValueError("Invalid name fields")
+        if not all([first_name, last_name]) or not all(isinstance(x, str) for x in [first_name, last_name]):
+            raise ValueError("Invalid name fields")
 
-         if not email or not isinstance(email, str) or "@" not in email:
-             raise ValueError("Invalid email")
+        if not email or not isinstance(email, str) or "@" not in email:
+            raise ValueError("Invalid email")
 
         user = User(**user_data)
         user.hash_password(user_data['password'])

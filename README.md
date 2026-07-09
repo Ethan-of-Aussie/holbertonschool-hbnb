@@ -64,7 +64,49 @@ Please navigate into the "part2" folder to see the listed examples of trial code
 
 ## Part 3
 
-TBD
+Entity relationship diagram made using mermaid.js
+
+```mermaid
+erDiagram
+    USER ||--o{ PLACE : registers
+    USER ||--o{ REVIEW : writes
+    PLACE ||--o{ REVIEW : reviewed
+    PLACE ||--o{ AMENITY : contains
+    PLACE ||--|| PLACE_AMENITIY: has
+    AMENITY ||--|| PLACE_AMENITIY: has
+
+    USER {
+        string id PK
+        string first_name
+        string last_name
+        string email
+        string password
+        bool is_admin
+    }
+    PLACE {
+        string id PK
+        string title
+        string description
+        float latitude
+        float longitude
+        string owner_id FK
+    }
+    REVIEW {
+        string id
+        string text
+        float rating
+        string user_id FK
+        string place_id FK
+    }
+    AMENITY {
+        string id PK
+        string name
+    }
+    PLACE_AMENITIY {
+        string place_id FK
+        string amenity_id FK
+    }
+```
 
 ## Authors
 

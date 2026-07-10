@@ -1,5 +1,4 @@
 from app.models.base_model import BaseModel
-from sqlalchemy import Column, Integer, String, ForeignKey
 from app.extensions import db
 
 class Amenity(BaseModel):

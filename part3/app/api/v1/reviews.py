@@ -9,16 +9,15 @@ api = Namespace('reviews', description='Review operations')
 review_model = api.model('Review', {
     'text': fields.String(required=True, description='Text of the review'),
     'rating': fields.Integer(required=True, description='Rating of the place (1-5)'),
-    'user_id': fields.String(required=True, description='ID of the user'),
     'place_id': fields.String(required=True, description='ID of the place')
 })
 
-review_output = api.model('Review', {
+review_output = api.model('Review_out', {
     'id': fields.String,
     'text': fields.String,
     'rating': fields.Integer,
     'user_id': fields.String(attribute="user.id"),
-    'place_id': fields.String(attribute="place.id")
+    'place_id': fields.String
     })
 
 review_list_output = api.model('Review List Output', {
@@ -50,8 +49,9 @@ class ReviewList(Resource):
 
         fields = ["text", "rating"]
         review_params = {f:review_data[f] for f in fields}
-        review_params["place"] = place
+        review_params["place_id"] = place.id
         review_params["user"] = user
+        review_params["user_id"] = get_jwt_identity()
         try:
             new_review = facade.create_review(review_params)
             place.add_review(new_review)

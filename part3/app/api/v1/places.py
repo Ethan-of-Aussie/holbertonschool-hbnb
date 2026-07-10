@@ -40,7 +40,8 @@ place_id_model = api.model(
         "latitude": fields.Float,
         "longitude": fields.Float,
         "owner": fields.Nested(user_model),
-        "amenities": fields.List(fields.Nested(amenity_model))
+        "amenities": fields.List(fields.Nested(amenity_model)),
+        "reviews": fields.List(fields.Nested(review_model))
     }
 )
 place_post_model = api.model(

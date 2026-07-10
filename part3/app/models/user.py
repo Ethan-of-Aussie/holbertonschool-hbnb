@@ -13,6 +13,7 @@ class User(BaseModel):
     password = db.Column(db.String(128), nullable=False)
     is_admin = db.Column(db.Boolean, default=False)
     places = db.relationship("Place", back_populates="owner")
+    reviews = db.relationship('Review', back_populates="user")
 
     def hash_password(self, password):
         """Hashes the password before storing it."""

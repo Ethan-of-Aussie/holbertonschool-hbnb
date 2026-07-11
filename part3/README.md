@@ -5,8 +5,9 @@
 - Python 3.x
 - Flask
 - Flask-RESTX
+- Flask-SQLAlchemy
 
-Operation of part 2
+Operation of part 3
 
 To get started and using the implementation, please follow the steps listed below:
 
@@ -19,16 +20,26 @@ To get started and using the implementation, please follow the steps listed belo
 - Navigating to target directory
   
     ```
-	cd holbertonschool-hbnb/part2/
+	cd holbertonschool-hbnb/part3/
     ```
 
-- Activating virtual environment
+- Creating virtual environment
+
+	```
+	python3 -m venv venv
+ 	```
+ 
+- Activating virtual environment (if Windows)
+
+  	```
+  	venv\Scripts\activate
+   	```
+
+- Activating virtual environment (if mac or linux)
   
 	```
     source venv/bin/activate
   	```
-
-- Ignore previous step if using Holberton sandbox (ubuntu_2204)
 
 - Installing required packages
   

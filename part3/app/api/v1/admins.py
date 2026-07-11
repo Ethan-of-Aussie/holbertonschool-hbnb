@@ -205,6 +205,29 @@ class AdminPlaceModify(Resource):
             return {"error": str(e)}, 400
         return {"message": "Place updated successfully"}, 200
 
+@api.route('/places/<place_id>')
+class AdminPlaceDelete(Resource):
+    @api.response(200, 'Place deleted successfully')
+    @api.response(404, 'Place not found')
+    @api.response(403, "Admin privileges required")
+    @jwt_required()
+    def delete(self, place_id):
+        """Delete a place"""
+        
+        current_user = get_jwt()
+        if not current_user.get('is_admin'):
+            return {'error': 'Admin privileges required'}, 403
+        
+        found_place = facade.get_place(place_id)
+        if found_place is None:
+            return {"error": "place not found"}, 404
+        
+        try:
+            facade.delete_place(place_id)
+            return {'success': 'Place successfully deleted'}, 200
+        except ValueError as e:
+            return {'error': str(e)}, 404
+        
 @api.route('/reviews/<review_id>')
 class AdminReviewModify(Resource):
     @jwt_required()

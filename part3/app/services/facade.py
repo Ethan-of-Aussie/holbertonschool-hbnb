@@ -115,7 +115,16 @@ class HBnBFacade:
         
         self.place_repo.update(place_id, place_data)
         return True
-
+    
+    def delete_place(self, place_id):
+        place = self.place_repo.get(place_id)
+        
+        if not place:
+            raise ValueError("Place not found")
+        
+        self.place_repo.delete(place_id)
+        return place
+    
     # Review realated methods
     def create_review(self, review_data):
         if review_data["rating"] < 1 or review_data["rating"] > 5:

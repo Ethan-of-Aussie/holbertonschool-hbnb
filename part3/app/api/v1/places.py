@@ -110,6 +110,8 @@ class PlaceResource(Resource):
     def put(self, place_id):
         """Update a place's information"""
         data = api.payload
+
+        """ prevent client from change owner_id of the place """
         data.pop("owner_id",None)
         if data["title"] == "":
             return {"error": "empty title"}, 400

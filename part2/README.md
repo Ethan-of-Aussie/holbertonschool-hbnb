@@ -50,9 +50,9 @@ To get started and using the implementation, please follow the steps listed belo
 
 - Running the server
   
-	  ```
+	 ```
     python3 run.py
-  	```
+  ```
   
 Listed below are some example trial codes (curl) that can be used to check the functionality of the api calls.
   

@@ -61,7 +61,7 @@ place_post_model = api.model(
 @api.route('/')
 class PlaceList(Resource):
     @jwt_required()
-    @api.expect(place_model)
+    @api.expect(place_model, validation=True)
     @api.response(201, 'Place successfully created')
     @api.response(400, 'Invalid input data')
     def post(self):
@@ -113,17 +113,19 @@ class PlaceResource(Resource):
 
         """ prevent client from change owner_id of the place """
         data.pop("owner_id",None)
-        if data["title"] == "":
-            return {"error": "empty title"}, 400
-        founded_place = facade.get_place(place_id)
-        if founded_place is None:
-            return {"error": "place not founded"}, 404
-        if founded_place.owner_id != get_jwt_identity():
-            return {"error": "only owner of the place is allowed to modify"}, 403
-        is_updated = facade.update_place(place_id, data)
-        if not is_updated:
-            return {"error": "place not founded"}, 404
-        return {"message": "success"}, 200
+
+        try:
+            founded_place = facade.get_place(place_id)
+            if founded_place is None:
+                return {"error": "place not found"}, 404
+            if founded_place.owner_id != get_jwt_identity():
+                return {"error": "only owner of the place is allowed to modify"}, 403
+            is_updated = facade.update_place(place_id, data)
+            if not is_updated:
+                return {"error": "place not found"}, 404
+            return {"message": "success"}, 200
+        except Exception as e:
+            return {"error": str(e)}, 400
 
 @api.route('/<place_id>/reviews')
 class PlaceReviewList(Resource):

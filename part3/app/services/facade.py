@@ -97,6 +97,16 @@ class HBnBFacade:
         return self.place_repo.get_all()
 
     def update_place(self, place_id, place_data):
+        if place_data["title"] == "":
+            raise ValueError("empty title")
+        if not isinstance(place_data["price"], float):
+            raise TypeError("price data need to be of type float")
+        if place_data["price"] < 0:
+            raise ValueError("price need to be positive number")
+        if place_data["latitude"] < -90 or place_data["latitude"] > 90:
+            raise ValueError("latitude must be between -90 and 90")
+        if place_data["longitude"] < -180 or place_data["longitude"] > 180:
+            raise ValueError("longitude must be between -180 and 180")
         if not self.place_repo.get(place_id):
             return False
         if place_data["amenities"] is not None:

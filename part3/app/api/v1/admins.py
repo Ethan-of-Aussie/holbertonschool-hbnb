@@ -21,6 +21,13 @@ user_model = api.model('User', {
     'email': fields.String(required=True, description='Email of the user')
 })
 
+user_update_model = api.model('UserUpdate', {
+    'first_name': fields.String(required=False, description='First name of the user'),
+    'last_name': fields.String(required=False, description='Last name of the user'),
+    'password': fields.String(required=False, description='User password'),
+    'email': fields.String(required=False, description='Email of the user')
+})
+
 place_model = api.model('Place', {
     'title': fields.String(required=True, description='Title of the place'),
     'description': fields.String(description='Description of the place'),
@@ -42,7 +49,7 @@ amenity_response = api.model('AmenityResponse', {
 
 @api.route('/users/<user_id>')
 class AdminUserModify(Resource):
-    @api.expect(user_model)
+    @api.expect(user_update_model)
     @api.response(400, "Invalid input data")
     @api.response(200, "User updated successfully")
     @api.response(404, "user not found")
@@ -54,6 +61,19 @@ class AdminUserModify(Resource):
         """No data"""
         if not user_data:
             return {"error": "Invalid input data"}, 400
+        
+        first_name = user_data.get("first_name")
+        if first_name is not None and not isinstance(first_name, str):
+            return {"error": "Invalid first name"}, 400
+        
+        last_name = user_data.get("last_name")
+        if last_name is not None and not isinstance(last_name, str):
+            return {"error": "Invalid last name"}, 400
+        
+        email = user_data.get("email")
+        if email is not None: 
+            if not isinstance(email, str) or "@" not in email:
+                return {"error": "Invalid email"}, 400
 
         user = facade.get_user(user_id)
         """ID was not found, wrong or missing"""
@@ -65,7 +85,6 @@ class AdminUserModify(Resource):
         if not current_user.get('is_admin'):
             return {'error': 'Admin privileges required'}, 403
 
-        email = user_data.get('email')
         existing_user = facade.get_user_by_email(email)
         if email:
             # Check if email is already in use

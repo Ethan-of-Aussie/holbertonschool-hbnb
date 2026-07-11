@@ -64,7 +64,7 @@ Please navigate into the "part2" folder to see the listed examples of trial code
 
 ## Part 3
 
-Entity relationship diagram made using mermaid.js
+Listed below is the entity relationship diagram depicting the relationships between each class of the clone, made in part 3 of the project. It has been created using mermaid.js
 
 ```mermaid
 erDiagram
@@ -108,6 +108,15 @@ erDiagram
     }
 ```
 
+Relationships
+
+- User has one-to-many relationship with Place.
+- User has one-to-many relationship with Review.
+- Place has one-to-many relationship with review.
+- Place has one-to-many relationship with Amenity.
+- Place has one-to-one relationship with Place_Amenity.
+- Amenity has one-to-one relationship with Place_Amenity.
+  
 ## Authors
 
 - 	Aaron Regterschot

@@ -136,8 +136,12 @@ class HBnBFacade:
         return self.review_repo.get(place_id)
 
     def update_review(self, review_id, review_data):
+        if review_data["rating"] < 1 or review_data["rating"] > 5:
+            raise ValueError("Rating should be between 1 and 5")
         if not self.review_repo.get(review_id):
             return False
+        
+        review_data.pop("place_id", None)
         self.review_repo.update(review_id, review_data)
         return True
 

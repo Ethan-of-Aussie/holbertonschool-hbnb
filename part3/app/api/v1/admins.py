@@ -3,11 +3,16 @@
 from app.services import facade
 from flask import request
 from flask_restx import Namespace, Resource, fields, marshal
-from flask_jwt_extended import jwt_required, get_jwt, get_jwt_identity
+from flask_jwt_extended import current_user, jwt_required, get_jwt, get_jwt_identity
 from app.extensions import bcrypt
 from app.api.v1.reviews import review_model
 
 api = Namespace('admin', description='Admin operations')
+
+review_modify = api.model('Review', {
+    'text': fields.String(required=True, description='Text of the review'),
+    'rating': fields.Integer(required=True, description='Rating of the place (1-5)')
+})
 
 user_model = api.model('User', {
     'first_name': fields.String(required=True, description='First name of the user'),
@@ -176,6 +181,7 @@ class AdminPlaceModify(Resource):
     def put(self, place_id):
 
         place_data = api.payload
+        place_data.pop("owner_id",None)
         """No data"""
         if not place_data:
             return {"error": "Invalid input data"}, 400
@@ -195,6 +201,61 @@ class AdminPlaceModify(Resource):
             """Update fail"""   
             if not updated_place:
                 return {"error": "update failed"}, 400
-        except ValueError as e:
+        except Exception as e:
             return {"error": str(e)}, 400
         return {"message": "Place updated successfully"}, 200
+
+@api.route('/reviews/<review_id>')
+class AdminReviewModify(Resource):
+    @jwt_required()
+    @api.expect(review_modify)
+    @api.response(200, 'Review updated successfully')
+    @api.response(404, 'Review not found')
+    @api.response(400, 'Invalid input data')
+    def put(self, review_id):
+        """Update a review's information"""
+        
+        review_data = api.payload
+        """No data"""
+        if not review_data:
+            return {"error": "Invalid input data"}, 400
+
+        current_user = get_jwt()
+        if not current_user.get('is_admin'):
+            return {'error': 'Admin privileges required'}, 403
+        
+        found_review = facade.get_review(review_id)
+        if found_review is None:
+            return {"error": "review not found"}, 404
+        
+        try:
+            review = facade.update_review(review_id, review_data)
+            if not review:
+                return {'error': "Update Failed"}, 400
+        except ValueError as e:
+            return {"error": str(e)}, 400
+
+        return {'success': "Review update"}, 200
+    
+@api.route('/reviews/<review_id>')
+class AdminReviewDelete(Resource):
+    @jwt_required()
+    @api.response(200, 'Review deleted successfully')
+    @api.response(404, 'Review not found')
+    @api.response(403, "Admin privileges required")
+    def delete(self, review_id):
+        """Delete a review"""
+        
+        current_user = get_jwt()
+        if not current_user.get('is_admin'):
+            return {'error': 'Admin privileges required'}, 403
+        
+        found_review = facade.get_review(review_id)
+        if found_review is None:
+            return {"error": "review not found"}, 404
+        
+        try:
+            facade.delete_review(review_id)
+            return {'success': 'Review successfully deleted'}, 200
+        except ValueError as e:
+            return {'error': str(e)}, 404

@@ -84,7 +84,7 @@ class AdminUserModify(Resource):
         # If 'is_admin' is part of the identity payload
         if not current_user.get('is_admin'):
             return {'error': 'Admin privileges required'}, 403
-
+            
         existing_user = facade.get_user_by_email(email)
         if email:
             # Check if email is already in use

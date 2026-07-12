@@ -1,9 +1,8 @@
 #!/usr/bin/python3
 
 from app.services import facade
-from flask import request
 from flask_restx import Namespace, Resource, fields, marshal
-from flask_jwt_extended import current_user, jwt_required, get_jwt, get_jwt_identity
+from flask_jwt_extended import jwt_required, get_jwt
 from app.extensions import bcrypt
 from app.api.v1.reviews import review_model
 
@@ -19,13 +18,6 @@ user_model = api.model('User', {
     'last_name': fields.String(required=True, description='Last name of the user'),
     'password': fields.String(required=True, description='User password'),
     'email': fields.String(required=True, description='Email of the user')
-})
-
-user_update_model = api.model('UserUpdate', {
-    'first_name': fields.String(required=False, description='First name of the user'),
-    'last_name': fields.String(required=False, description='Last name of the user'),
-    'password': fields.String(required=False, description='User password'),
-    'email': fields.String(required=False, description='Email of the user')
 })
 
 place_model = api.model('Place', {
@@ -49,7 +41,7 @@ amenity_response = api.model('AmenityResponse', {
 
 @api.route('/users/<user_id>')
 class AdminUserModify(Resource):
-    @api.expect(user_update_model)
+    @api.expect(user_model)
     @api.response(400, "Invalid input data")
     @api.response(200, "User updated successfully")
     @api.response(404, "user not found")

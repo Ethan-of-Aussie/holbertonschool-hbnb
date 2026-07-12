@@ -1,8 +1,6 @@
 from flask_restx import Namespace, Resource, fields, marshal
 from app.services import facade
 from app.models.place import Place
-from app.models.amenity import Amenity
-from app.models.review import Review
 from app.api.v1.reviews import review_model, review_list_output
 from flask_jwt_extended import jwt_required, get_jwt_identity
 

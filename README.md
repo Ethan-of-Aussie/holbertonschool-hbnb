@@ -64,16 +64,17 @@ Please navigate into the "part2" folder to see the listed examples of trial code
 
 ## Part 3
 
-Listed below is the entity relationship diagram depicting the relationships between each class of the clone, made in part 3 of the project. It has been created using mermaid.js
+Listed below is the entity relationship diagram depicting the relationships between each class of the clone, made in part 3 of the project. It has been created using mermaid.js.
+
+Please navigate into the "part3" folder to view a more detailed explaination of the relationship between each classes.
 
 ```mermaid
 erDiagram
     USER ||--o{ PLACE : registers
     USER ||--o{ REVIEW : writes
     PLACE ||--o{ REVIEW : reviewed
-    PLACE ||--o{ AMENITY : contains
-    PLACE ||--|| PLACE_AMENITIY: has
-    AMENITY ||--|| PLACE_AMENITIY: has
+    PLACE ||--o{ PLACE_AMENITIY: has
+    AMENITY ||--o{ PLACE_AMENITIY: has
 
     USER {
         string id PK
@@ -108,15 +109,6 @@ erDiagram
     }
 ```
 
-Relationships
-
-- User has one-to-many relationship with Place.
-- User has one-to-many relationship with Review.
-- Place has one-to-many relationship with review.
-- Place has one-to-many relationship with Amenity.
-- Place has one-to-one relationship with Place_Amenity.
-- Amenity has one-to-one relationship with Place_Amenity.
-  
 ## Authors
 
 - 	Aaron Regterschot

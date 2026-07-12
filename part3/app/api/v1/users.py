@@ -44,10 +44,7 @@ class UserList(Resource):
     def get(self):
         """Retrieves all users"""
         user_list = facade.get_all_users()
-        #if not all(isinstance(u, User) for u in user_list):
-           # raise TypeError("This is user list")
-        #fields = ["id", "first_name", "last_name", "email"]
-        #user_dic = [{field: d.__dict__[field] for field in fields} for d in user_list]
+        
         return user_list, 200
 
 @api.route('/<user_id>')

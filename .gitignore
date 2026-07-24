@@ -9,3 +9,7 @@ instance/
 
 # Visual Studio Code
 .vscode/
+
+# virtual enviornment
+venv/
+.venv/

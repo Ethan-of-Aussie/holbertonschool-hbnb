@@ -81,7 +81,8 @@ class PlaceList(Resource):
         data = facade.get_all_places()
         if not all(isinstance(p, Place) for p in data):
             raise TypeError("This is a place list")
-        fields = ["id", "title", "latitude", "longitude"]
+        # needed to put price and escription for the frontend, please dont remove them
+        fields = ["id", "title", "description", "price", "latitude", "longitude"]
         res_dic = [{field: d.__dict__[field] for field in fields} for d in data]
         return res_dic, 200
 

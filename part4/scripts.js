@@ -32,19 +32,7 @@ async function loginUser(email, password) {
 /*
 index section of task-2
 */
-async function logincheckAuthentication() {
-    const token = getCookie('token');
-    const loginLink = document.getElementById('login-link');
 
-    if (!token) {
-        loginLink.style.display = 'block';
-    } else {
-        loginLink.style.display = 'none';
-        // Fetch places data if the user is authenticated
-        const places = await fetchPlaces(token);
-        displayPlaces(places);
-    }
-}
 /*
 Get cookie
  */
@@ -150,22 +138,6 @@ function getPlaceIdFromURL() {
     return params.get("id")
 }
 
-function placecheckAuthentication() {
-    const token = getCookie('token');
-    const addReviewSection = document.getElementById('add-review');
-    const placeId = getPlaceIdFromURL();
-
-    if (!token) {
-        addReviewSection.style.display = 'none';
-    } else {
-        addReviewSection.style.display = 'block';
-        // Store the token for later use
-       
-    } 
-    fetchPlaceDetails(token, placeId).then(place => {
-            if (place) displayPlaceDetails(place, token)
-        });
-}
 
 async function fetchPlaceDetails(token, placeId) {
     const response = await fetch(`http://localhost:5000/api/v1/places/${placeId}`, {
@@ -185,7 +157,7 @@ async function fetchPlaceDetails(token, placeId) {
     // Handle the response and pass the data to displayPlaceDetails function
 }
 
-function displayPlaceDetails(place, token) {
+function displayPlaceDetails(place) {
     const place_list_id = document.querySelector('#places-list')
     place_list_id.innerHTML = '';
     // Clear the current content of the place details section
@@ -215,14 +187,13 @@ function displayPlaceDetails(place, token) {
                     <p><strong>${r.user}</strong></p>
                     <p>Rating: ${r.rating}/5</p>
                     </div>`).join('')
-                : `<p>No reviews yet</p>`}
+                : `<p>No reviews yet</p>`
+            }
        
         </div>
-         ${token ? `
           <button onclick="window.location.href='add_review.html?id=${place.id}'">
           Add Review
           </button>  
-        ` : ""}
           </div>
         `
     );
@@ -230,12 +201,102 @@ function displayPlaceDetails(place, token) {
     // Append the created elements to the place details section
 }
 
+/* 
+Add Review form task-4
+*/
+
+document.addEventListener('DOMContentLoaded', () => {
+    const reviewForm = document.getElementById('review-form');
+    const token = review_checkAuthentication();
+    const placeId = getPlaceIdFromURL();
+
+    if (reviewForm) {
+        reviewForm.addEventListener('submit', async (event) => {
+            event.preventDefault();
+            const reviewText = reviewForm.querySelector('#review').value;
+            const reviewRating = reviewForm.querySelector('#rating').value;
+            // Get review text from form
+            const response = await submitReview(token, placeId, reviewText, reviewRating)
+            // Make AJAX request to submit review
+            /*handleResponse passes response body to check validation and to clear reviewForm */
+            await handleResponse(response, reviewForm)
+            // Handle the response
+        });
+    }
+});
+async function submitReview(token, placeId, reviewText, reviewRating) {
+        return await fetch(`http://localhost:5000/api/v1/reviews`, {
+        method: 'POST',
+        headers: {
+            'Content-Type': 'application/json',
+            'Authorization': `Bearer ${token}`  
+        },
+        body: JSON.stringify({
+            text: reviewText,
+            rating: reviewRating,
+            place_id: placeId
+        })
+        });
+
+    // Make a POST request to submit review data
+    // Include the token in the Authorization header
+    // Send placeId and reviewText in the request body
+    // Handle the response
+}
+async function handleResponse(response, reviewForm) {
+    if (response.ok) {
+        alert('Review submitted successfully!');
+        reviewForm.reset();
+        // Clear the form
+    } else {
+        const err = await response.json();
+        alert('Failed to submit review:' + err.error);
+    }
+}
 /** Login and permission checks */
+function place_checkAuthentication() {
+    const token = getCookie('token');
+    const addReviewSection = document.getElementById('add-review');
+    const placeId = getPlaceIdFromURL();
+
+    if (!token) {
+        addReviewSection.style.display = 'none';
+    } else {
+        addReviewSection.style.display = 'block';
+        // Store the token for later use
+       
+    } 
+    fetchPlaceDetails(token, placeId);
+        }
+async function login_checkAuthentication() {
+    const token = getCookie('token');
+    const loginLink = document.getElementById('login-link');
+
+    if (!token) {
+        loginLink.style.display = 'block';
+    } else {
+        loginLink.style.display = 'none';
+        // Fetch places data if the user is authenticated
+        const places = await fetchPlaces(token);
+        displayPlaces(places);
+    }
+}
+function review_checkAuthentication() {
+    const token = getCookie('token');
+    if (!token) {
+        window.location.href = 'index.html';
+    }
+    return token;
+}
+/* The checks are triggered when page detects an id */
 document.addEventListener("DOMContentLoaded", () => {
     if (document.querySelector("#login-link")) {
-        logincheckAuthentication();
+        login_checkAuthentication();
     }
     if (document.querySelector("#add-review")) {
-        placecheckAuthentication();
+        place_checkAuthentication();
+    }
+    if (document.querySelector("#review-form")) {
+        review_checkAuthentication();
     }
 });

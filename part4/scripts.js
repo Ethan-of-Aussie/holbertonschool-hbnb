@@ -7,6 +7,10 @@ document.addEventListener('DOMContentLoaded', () => {
         loginForm.addEventListener('submit', async (event) => {
             event.preventDefault();
             // Your code to handle form submission
+            const email = document.querySelector('#email').value;
+            const password = document.querySelector('#password').value;
+
+            await loginUser(email, password)
         });
     }
 });
@@ -55,7 +59,7 @@ Use the Fetch API to get the list of places and handle the response.
 */
 async function fetchPlaces(token) {
     // Make a GET request to fetch places data
-    const response = await fetch('http://localhost:5000/api/v1/places', {
+    const response = await fetch('http://localhost:5000/api/v1/places/', {
         method: 'GET',
         headers: {
             'Authorization': `Bearer ${token}`
@@ -86,9 +90,10 @@ function displayPlaces(places) {
         newDiv.classList.add("place-card")
 
         newDiv.innerHTML = `
-           <h3>${data.name}</h3>
+           <h3>${data.title}</h3>
            <p>Price: $${data.price}</p>
-           <p>${data.description}</p>      
+           <p>${data.description}</p>
+           <a href="place.html?id=${data.id}">View Details</a>      
         `// the double $ for data.price, one is variable insert and the other is a literal sign
 
         place_list_id.appendChild(newDiv)
@@ -108,7 +113,7 @@ All
 */
 
 const pricefilter = document.querySelector("#price-filter");
-const priceOptions = [10, 50, 100, "All"]
+const priceOptions = [10, 50, 100, 150, 200, 250, "All"]
 if (pricefilter) {
     priceOptions.forEach(value => {
         pricefilter.insertAdjacentHTML(
@@ -119,14 +124,17 @@ if (pricefilter) {
 // Populating price-list ^    
 }
 
-document.getElementById('price-filter').addEventListener('change', async (event) => {
+pricefilter.addEventListener('change', async (event) => {
     const selectedPrice = event.target.value;
     // Get the selected price value
     const token = getCookie('token');
     const places = await fetchPlaces(token);
-    const filtered = selectedPrice === "All" ? places :
-    places.filter(p => p.price <= Number(selectedPrice));
-    displayPlaces(filtered)
+    if (selectedPrice === "All") {
+       displayPlaces(places); 
+    } else {
+    const filtered = places.filter(p => p.price <= Number(selectedPrice));
+    displayPlaces(filtered);
+    }
     // Iterate over the places and show/hide them based on the selected price
 });
 
@@ -207,10 +215,11 @@ Add Review form task-4
 
 document.addEventListener('DOMContentLoaded', () => {
     const reviewForm = document.getElementById('review-form');
-    const token = review_checkAuthentication();
+    
     const placeId = getPlaceIdFromURL();
 
     if (reviewForm) {
+        const token = review_checkAuthentication();
         reviewForm.addEventListener('submit', async (event) => {
             event.preventDefault();
             const reviewText = reviewForm.querySelector('#review').value;
@@ -263,8 +272,7 @@ function place_checkAuthentication() {
         addReviewSection.style.display = 'none';
     } else {
         addReviewSection.style.display = 'block';
-        // Store the token for later use
-       
+        // Store the token for later use 
     } 
     fetchPlaceDetails(token, placeId);
         }
@@ -290,7 +298,7 @@ function review_checkAuthentication() {
 }
 /* The checks are triggered when page detects an id */
 document.addEventListener("DOMContentLoaded", () => {
-    if (document.querySelector("#login-link")) {
+    if (document.querySelector("#login-form")) {
         login_checkAuthentication();
     }
     if (document.querySelector("#add-review")) {

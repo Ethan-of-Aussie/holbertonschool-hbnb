@@ -16,7 +16,7 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 
 async function loginUser(email, password) {
-    const response = await fetch('http://localhost:5000/api/v1/auth/login', {
+    const response = await fetch('http://localhost:5000/api/v1/auth/login/', {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json'
@@ -82,21 +82,18 @@ function displayPlaces(places) {
     const place_list_id = document.querySelector('#places-list')
     place_list_id.innerHTML = '';
     // Clear the current content of the places list
-    /* Could use insertAdjacentHTML. 
+    /* insertAdjacentHTML. 
     The function in question can avoid the need to create div
     or use element.classlist.add and even the need to append */
     for (let data of places) {
-        const newDiv = document.createElement("div");
-        newDiv.classList.add("place-card")
-
-        newDiv.innerHTML = `
+        place_list_id.insertAdjacentHTML("beforeend", `
+        <div class="place-card">
            <h3>${data.title}</h3>
            <p>Price: $${data.price}</p>
            <p>${data.description}</p>
-           <a href="place.html?id=${data.id}">View Details</a>      
-        `// the double $ for data.price, one is variable insert and the other is a literal sign
-
-        place_list_id.appendChild(newDiv)
+           <a href="place.html?id=${data.id}" class="details-button"><button>View Details</button></a>
+           </div>      
+        `)// the double $ for data.price, one is variable insert and the other is a literal sign
     }
     // Iterate over the places data
     // For each place, create a div element and set its content
@@ -122,22 +119,22 @@ if (pricefilter) {
         )
     });
 // Populating price-list ^    
+
+
+    pricefilter.addEventListener('change', async (event) => {
+        const selectedPrice = event.target.value;
+        // Get the selected price value
+        const token = getCookie('token');
+        const places = await fetchPlaces(token);
+        if (selectedPrice === "All") {
+        displayPlaces(places); 
+        } else {
+        const filtered = places.filter(p => p.price <= Number(selectedPrice));
+        displayPlaces(filtered);
+        }
+        // Iterate over the places and show/hide them based on the selected price
+    });
 }
-
-pricefilter.addEventListener('change', async (event) => {
-    const selectedPrice = event.target.value;
-    // Get the selected price value
-    const token = getCookie('token');
-    const places = await fetchPlaces(token);
-    if (selectedPrice === "All") {
-       displayPlaces(places); 
-    } else {
-    const filtered = places.filter(p => p.price <= Number(selectedPrice));
-    displayPlaces(filtered);
-    }
-    // Iterate over the places and show/hide them based on the selected price
-});
-
 /*3.Place details Task */
 function getPlaceIdFromURL() {
     const params = new URLSearchParams(window.location.search);
@@ -148,7 +145,7 @@ function getPlaceIdFromURL() {
 
 
 async function fetchPlaceDetails(token, placeId) {
-    const response = await fetch(`http://localhost:5000/api/v1/places/${placeId}`, {
+    const response = await fetch(`http://localhost:5000/api/v1/places/${placeId}/`, {
         method: 'GET',
         headers: {
             "Authorization": `Bearer ${token}`
@@ -161,19 +158,20 @@ async function fetchPlaceDetails(token, placeId) {
         alert('Failed to fetch places:' + err.error);
         return null
     }
-    return await response.json()
+    const data = await response.json();
+    displayPlaceDetails(data);
     // Handle the response and pass the data to displayPlaceDetails function
 }
 
 function displayPlaceDetails(place) {
-    const place_list_id = document.querySelector('#places-list')
+    const place_list_id = document.querySelector('#place-details')
     place_list_id.innerHTML = '';
     // Clear the current content of the place details section
     place_list_id.insertAdjacentHTML("beforeend",
         `
         <div class="place-details">
         <div class="place-info">
-        <h3>${place.name}</h3>
+        <h3>${place.title}</h3>
         <p>${place.description}</p>
         <p>Price: $${place.price}</p>
         </div>
@@ -192,16 +190,18 @@ function displayPlaceDetails(place) {
                 ?   place.reviews.map(r => 
                     `<div class="review-card">
                     <p>Comment: ${r.text}</p>
-                    <p><strong>${r.user}</strong></p>
+                    <p><strong>${r.first_name} ${r.last_name}</strong></p>
                     <p>Rating: ${r.rating}/5</p>
                     </div>`).join('')
                 : `<p>No reviews yet</p>`
             }
        
         </div>
-          <button onclick="window.location.href='add_review.html?id=${place.id}'">
+        <a href="add_review.html?id=${place.id}" class="add-review">
+          <button>
           Add Review
-          </button>  
+          </button>
+          </a>  
           </div>
         `
     );
@@ -234,7 +234,7 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 });
 async function submitReview(token, placeId, reviewText, reviewRating) {
-        return await fetch(`http://localhost:5000/api/v1/reviews`, {
+        return await fetch(`http://localhost:5000/api/v1/reviews/`, {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json',
@@ -265,17 +265,18 @@ async function handleResponse(response, reviewForm) {
 /** Login and permission checks */
 function place_checkAuthentication() {
     const token = getCookie('token');
-    const addReviewSection = document.getElementById('add-review');
+    const addReviewSection = document.getElementById('review-form');
     const placeId = getPlaceIdFromURL();
-
+    if (addReviewSection) {
     if (!token) {
         addReviewSection.style.display = 'none';
     } else {
         addReviewSection.style.display = 'block';
         // Store the token for later use 
     } 
-    fetchPlaceDetails(token, placeId);
-        }
+    }
+    fetchPlaceDetails(token, placeId)
+}
 async function login_checkAuthentication() {
     const token = getCookie('token');
     const loginLink = document.getElementById('login-link');
@@ -301,7 +302,7 @@ document.addEventListener("DOMContentLoaded", () => {
     if (document.querySelector("#login-form")) {
         login_checkAuthentication();
     }
-    if (document.querySelector("#add-review")) {
+    if (document.querySelector("#place-details")) {
         place_checkAuthentication();
     }
     if (document.querySelector("#review-form")) {

@@ -33,13 +33,16 @@ place_id_model = api.model(
         "id": fields.String,
         "title": fields.String,
         "description": fields.String,
+        "price": fields.Float,
         "latitude": fields.Float,
         "longitude": fields.Float,
         "owner": fields.Nested(user_model),
         "amenities": fields.List(fields.Nested(amenity_model)),
-        "reviews": fields.List(fields.Nested(review_model))
+        "reviews": fields.List(fields.Nested(review_list_output))
     }
 )
+# added price to place_id_model to show in place-details dynamically populated
+# into place.html from scripts.js
 place_post_model = api.model(
     'place_most',
     {

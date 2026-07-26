@@ -128,9 +128,10 @@ class HBnBFacade:
     
     # Review realated methods
     def create_review(self, review_data):
-        if review_data["rating"] < 1 or review_data["rating"] > 5:
+        rating = int(review_data["rating"])
+        if rating < 1 or rating > 5:
             raise ValueError("Rating should be between 1 and 5")
-
+        review_data["rating"] = rating
         review = Review(**review_data)
 
         self.review_repo.add(review)
@@ -146,11 +147,12 @@ class HBnBFacade:
         return self.review_repo.get(place_id)
 
     def update_review(self, review_id, review_data):
-        if review_data["rating"] < 1 or review_data["rating"] > 5:
+        rating = int(review_data["rating"])
+        if rating < 1 or rating > 5:
             raise ValueError("Rating should be between 1 and 5")
         if not self.review_repo.get(review_id):
             return False
-        
+        review_data["rating"] = rating
         review_data.pop("place_id", None)
         self.review_repo.update(review_id, review_data)
         return True

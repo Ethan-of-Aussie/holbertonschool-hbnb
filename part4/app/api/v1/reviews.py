@@ -15,6 +15,7 @@ review_model = api.model('Review', {
 review_output = api.model('Review_out', {
     'id': fields.String,
     'text': fields.String,
+
     'rating': fields.Integer,
     'user_id': fields.String(attribute="user.id"),
     'place_id': fields.String
@@ -23,6 +24,8 @@ review_output = api.model('Review_out', {
 review_list_output = api.model('Review List Output', {
     'id': fields.String,
     'text': fields.String,
+    'first_name': fields.String(attribute="user.first_name"),
+    'last_name': fields.String(attribute="user.last_name"),
     'rating': fields.Integer,
 })
 

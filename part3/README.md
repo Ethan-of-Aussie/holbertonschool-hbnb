@@ -16,49 +16,49 @@ To get started and using the implementation, please follow the steps listed belo
 - Cloning the repo
   
 	```
-		git clone https://github.com/Ethan-of-Aussie/holbertonschool-hbnb.git
+	git clone https://github.com/Ethan-of-Aussie/holbertonschool-hbnb.git
  	```
   
 - Navigating to target directory
   
     ```
-		cd holbertonschool-hbnb/part3/
+	cd holbertonschool-hbnb/part3/
     ```
 
 - Creating virtual environment
 
 	```
-		python3 -m venv venv
+	python3 -m venv venv
  	```
  
 - Activating virtual environment (if Windows)
 
   	```
-  		venv\Scripts\activate
+  	venv\Scripts\activate
    	```
 
 - Activating virtual environment (if mac or linux)
   
 	```
- 		source venv/bin/activate
+ 	source venv/bin/activate
 	```
 
     If you get the following error
 
     ```
-    	bash: venv/bin/activate: No such file or directory
+    bash: venv/bin/activate: No such file or directory
     ```
 
     Try doing the following
 
     ```
-    	sudo apt update
+    sudo apt update
     ```
 
     followed by
 
     ```
-    	sudo apt install python3.10-venv
+    sudo apt install python3.10-venv
     ```
 
     Recreate the virutal environment and activate it following the above process after which the next step listed can be followed.
@@ -66,7 +66,7 @@ To get started and using the implementation, please follow the steps listed belo
 - Installing required packages
   
     ```
-    	pip install -r requirements.txt
+    pip install -r requirements.txt
     ```
 
 - Installing SQLite 3
@@ -74,26 +74,26 @@ To get started and using the implementation, please follow the steps listed belo
     For Powershell
 
     ```
-    	winget install SQLite.SQLite
+    winget install SQLite.SQLite
     ```
 
     For bash
 
     ```
-    	sudo apt install sqlite3
+    sudo apt install sqlite3
     ```
 
 - Database creation
 
     ```
-    	flask shell
+    flask shell
     ```
 
 	followed by within the interpreter that opens
 
     ```
-    	 from app import db
-    	 db.create_all()
+    from app import db
+    db.create_all()
     ```
 
 - Database population (use when inside part 3 directory)
@@ -101,19 +101,19 @@ To get started and using the implementation, please follow the steps listed belo
     For Windows
 
     ```
-    	Get-Content populate_script.sql | sqlite3 instance/development.db
+    Get-Content populate_script.sql | sqlite3 instance/development.db
     ```
 
     For Linux/Mac
 
     ```
-    	sqlite3 instance/development.db < populate_script.sql
+    sqlite3 instance/development.db < populate_script.sql
     ```
 
 - Running the server
   
 	```
-    	python3 run.py
+ 	python3 run.py
   	```
   
 Listed below is the Entity Relationship Diagram of our Hbnb clone

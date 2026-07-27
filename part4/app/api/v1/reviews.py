@@ -28,7 +28,7 @@ review_list_output = api.model('Review List Output', {
     'last_name': fields.String(attribute="user.last_name"),
     'rating': fields.Integer,
 })
-
+# added first and last name so when user has a review we see their name at the place of the review
 @api.route('/')
 class ReviewList(Resource):
     @jwt_required()

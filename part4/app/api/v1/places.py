@@ -41,6 +41,7 @@ place_id_model = api.model(
         "reviews": fields.List(fields.Nested(review_list_output))
     }
 )
+# changed reviews to use review_list_output instead of review_model
 # added price to place_id_model to show in place-details dynamically populated
 # into place.html from scripts.js
 place_post_model = api.model(

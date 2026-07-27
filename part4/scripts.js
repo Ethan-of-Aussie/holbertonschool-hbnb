@@ -1,5 +1,6 @@
 #!/usr/bin/node
 
+
 document.addEventListener('DOMContentLoaded', () => {
     const loginForm = document.getElementById('login-form');
 
@@ -26,7 +27,10 @@ async function loginUser(email, password) {
     // Handle the response
     if (response.ok) {
     const data = await response.json();
-    document.cookie = `token=${data.access_token}; path=/`;
+    const expires = Date.now() + 3600_000;
+    localStorage.setItem("token_exp", expires)
+    const hour = new Date(expires).toUTCString();
+    document.cookie = `token=${data.access_token}; expires=${hour}; path=/`;
     window.location.href = 'index.html';
 } else {
     alert('Login failed: ' + response.statusText);
@@ -155,8 +159,8 @@ async function fetchPlaceDetails(token, placeId) {
     // Include the token in the Authorization header
     if (!response.ok) {
         const err = await response.json()
-        alert('Failed to fetch places:' + err.error);
-        return null
+        alert('ACCESS DENIED! YOU HAVE NO RIGHTS');
+        window.location.href = 'index.html';
     }
     const data = await response.json();
     displayPlaceDetails(data);
@@ -267,24 +271,26 @@ function place_checkAuthentication() {
     const token = getCookie('token');
     const addReviewSection = document.getElementById('review-form');
     const placeId = getPlaceIdFromURL();
+
     if (addReviewSection) {
     if (!token) {
-        addReviewSection.style.display = 'none';
+        addReviewSection.style.display = 'none';        
     } else {
-        addReviewSection.style.display = 'block';
-        // Store the token for later use 
+        addReviewSection.style.display = 'block';               
     } 
     }
     fetchPlaceDetails(token, placeId)
+    // Store the token for later use 
 }
 async function login_checkAuthentication() {
     const token = getCookie('token');
-    const loginLink = document.getElementById('login-link');
-
+    const loginLink = document.querySelector('#login-link');
+/**may want logout at id="logout" button */
     if (!token) {
         loginLink.style.display = 'block';
     } else {
         loginLink.style.display = 'none';
+        
         // Fetch places data if the user is authenticated
         const places = await fetchPlaces(token);
         displayPlaces(places);
@@ -292,20 +298,43 @@ async function login_checkAuthentication() {
 }
 function review_checkAuthentication() {
     const token = getCookie('token');
+    // perhaps maybe implement invalid token checks with invalidToken
+    const reviewForm = document.querySelector('#review-form');
+    const placeId = getPlaceIdFromURL();
+    if (reviewForm){
     if (!token) {
+        alert("invalid token")
         window.location.href = 'index.html';
+        return null
+    }
+    if (!placeId){
+        alert("Accessing invalid Place")
+        window.location.href = 'index.html';
+        return null
+    }
+    setInterval(() => {
+    if (expiredToken()){
+        alert("TOKEN EXPIRED!")
+        window.location.href = 'index.html';
+        return null
+    }
+}, 5000)
     }
     return token;
 }
+function expiredToken() {
+   const ex = Number(localStorage.getItem("token_exp"));
+   return Date.now() > ex;
+}
 /* The checks are triggered when page detects an id */
 document.addEventListener("DOMContentLoaded", () => {
-    if (document.querySelector("#login-form")) {
+    if (document.querySelector("#login-link")) {
         login_checkAuthentication();
     }
     if (document.querySelector("#place-details")) {
         place_checkAuthentication();
     }
     if (document.querySelector("#review-form")) {
-        review_checkAuthentication();
+        review_checkAuthentication();;
     }
 });

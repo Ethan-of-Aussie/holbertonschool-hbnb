@@ -29,14 +29,49 @@ async function loginUser(email, password) {
     const data = await response.json();
     const expires = Date.now() + 3600_000;
     localStorage.setItem("token_exp", expires)
-    const hour = new Date(expires).toUTCString();
-    document.cookie = `token=${data.access_token}; expires=${hour}; path=/`;
+
+    document.cookie = `token=${data.access_token}; Max-Age=3600; path=/`;
     window.location.href = 'index.html';
 } else {
     alert('Login failed: ' + response.statusText);
 }
 }
 
+async function createUser(first, last, email, password) {
+    const response = await fetch('http://localhost:5000/api/v1/users/', {
+        method: 'POST',
+        headers: {
+            'Content-Type': 'application/json'
+        },
+        body: JSON.stringify({
+            first_name: first, 
+            last_name: last, 
+            email: email, 
+            password: password })
+    })
+
+        if (response.ok) {
+        alert("Account created successfully");
+        loginUser(email, password);
+    } else {
+        const err = await response.json();
+        alert("Failed to create account: " + err.error);
+    }
+}
+document.addEventListener('DOMContentLoaded', () => {
+    const regForm = document.querySelector('#register-form');
+
+    if (regForm) {
+        regForm.addEventListener('submit', async (event) =>{
+            event.preventDefault();
+            const first = document.querySelector('#first_name').value;
+            const last = document.querySelector('#last_name').value;
+            const email = document.querySelector('#email').value;
+            const password = document.querySelector('#password').value;
+            await createUser(first, last, email, password);
+        });
+    }
+});
 /*
 index section of task-2
 */
@@ -159,7 +194,7 @@ async function fetchPlaceDetails(token, placeId) {
     // Include the token in the Authorization header
     if (!response.ok) {
         const err = await response.json()
-        alert('ACCESS DENIED! YOU HAVE NO RIGHTS');
+        alert('ACCESS DENIED! Are you logged-in?');
         window.location.href = 'index.html';
     }
     const data = await response.json();
@@ -174,69 +209,82 @@ function displayPlaceDetails(place) {
     place_list_id.insertAdjacentHTML("beforeend",
         `
         <div class="place-details">
-        <div class="place-info">
-        <h3>${place.title}</h3>
-        <p>${place.description}</p>
-        <p>Price: $${place.price}</p>
-        </div>
+            <div class="place-info">
+                <h1>${place.title}</h1>
+                <div class="place-text">
+                    <p>Description: ${place.description}</p>
+                    <p>Price per night: $${place.price}</p>
+                </div>
+                <div class="place-amenities">
+                <h3>Amenities:</h3>
+                <ul>
+                    ${place.amenities.map(a => `<li>${a.name}</li>`).join('')}
+                </ul>
+                </div>
+            </div>
 
-        <div class="place-amenities">
-        <h3>Amenities</h3>
-        <ul>
-            ${place.amenities.map(a => `<li>${a.name}</li>`).join('')}
-        </ul>
-        </div>
+
 
         <div class="place-reviews">
-        <h3>Reviews</h3>
-            ${
-                place.reviews.length > 0
-                ?   place.reviews.map(r => 
-                    `<div class="review-card">
-                    <p>Comment: ${r.text}</p>
-                    <p><strong>${r.first_name} ${r.last_name}</strong></p>
-                    <p>Rating: ${r.rating}/5</p>
-                    </div>`).join('')
-                : `<p>No reviews yet</p>`
-            }
-       
+            <h3>Reviews</h3>
+                ${
+                    place.reviews.length > 0
+                    ?   place.reviews.map(r => 
+                        `<div class="review-card">
+                        <p><strong>${r.first_name} ${r.last_name}</strong></p>
+                        <p>Comment: ${r.text}</p>
+                        <p>Rating: ${r.rating}/5</p>
+                        </div>`).join('')
+                    : `<p>No reviews yet</p>`
+                }
+        
         </div>
-        <a href="add_review.html?id=${place.id}" class="add-review">
-          <button>
-          Add Review
-          </button>
-          </a>  
+        <form id="review-form">
+            <h2>Add a Review</h2>
+
+            <label for="review">Your Review:</label>
+            <textarea id="review" name="review" required></textarea>
+
+            <label for="rating">Rating:</label>
+            <select id="rating" name="rating" required>
+                <option>1</option>
+                <option>2</option>
+                <option>3</option>
+                <option>4</option>
+                <option>5</option>
+            </select>
+
+            <button type="submit">Submit Review</button>
+        </form>
+
           </div>
         `
+        
     );
     // Create elements to display the place details (name, description, price, amenities and reviews)
     // Append the created elements to the place details section
+    const reviewForm = document.getElementById('review-form');
+    const placeId = getPlaceIdFromURL();
+    const token = getCookie('token');
+
+    reviewForm.addEventListener('submit', async (event) => {
+        event.preventDefault();
+
+        const reviewText = reviewForm.querySelector('#review').value;
+        const reviewRating = reviewForm.querySelector('#rating').value;
+
+        const response = await submitReview(token, placeId, reviewText, reviewRating);
+        await handleResponse(response, reviewForm);
+    });
+
+    review_checkAuthentication();
 }
 
 /* 
 Add Review form task-4
 */
 
-document.addEventListener('DOMContentLoaded', () => {
-    const reviewForm = document.getElementById('review-form');
-    
-    const placeId = getPlaceIdFromURL();
 
-    if (reviewForm) {
-        const token = review_checkAuthentication();
-        reviewForm.addEventListener('submit', async (event) => {
-            event.preventDefault();
-            const reviewText = reviewForm.querySelector('#review').value;
-            const reviewRating = reviewForm.querySelector('#rating').value;
-            // Get review text from form
-            const response = await submitReview(token, placeId, reviewText, reviewRating)
-            // Make AJAX request to submit review
-            /*handleResponse passes response body to check validation and to clear reviewForm */
-            await handleResponse(response, reviewForm)
-            // Handle the response
-        });
-    }
-});
 async function submitReview(token, placeId, reviewText, reviewRating) {
         return await fetch(`http://localhost:5000/api/v1/reviews/`, {
         method: 'POST',
@@ -269,39 +317,32 @@ async function handleResponse(response, reviewForm) {
 /** Login and permission checks */
 function place_checkAuthentication() {
     const token = getCookie('token');
-    const addReviewSection = document.getElementById('review-form');
     const placeId = getPlaceIdFromURL();
 
-    if (addReviewSection) {
-    if (!token) {
-        addReviewSection.style.display = 'none';        
-    } else {
-        addReviewSection.style.display = 'block';               
-    } 
-    }
     fetchPlaceDetails(token, placeId)
     // Store the token for later use 
 }
 async function login_checkAuthentication() {
     const token = getCookie('token');
     const loginLink = document.querySelector('#login-link');
+    const logout = document.querySelector('#logout')
 /**may want logout at id="logout" button */
     if (!token) {
         loginLink.style.display = 'block';
+        logout.style.display = 'none';
+        return null
     } else {
         loginLink.style.display = 'none';
-        
+        logout.style.display = 'block';
         // Fetch places data if the user is authenticated
         const places = await fetchPlaces(token);
         displayPlaces(places);
     }
 }
-function review_checkAuthentication() {
+function validation_checkAuthentication() {
     const token = getCookie('token');
     // perhaps maybe implement invalid token checks with invalidToken
-    const reviewForm = document.querySelector('#review-form');
     const placeId = getPlaceIdFromURL();
-    if (reviewForm){
     if (!token) {
         alert("invalid token")
         window.location.href = 'index.html';
@@ -312,29 +353,44 @@ function review_checkAuthentication() {
         window.location.href = 'index.html';
         return null
     }
-    setInterval(() => {
+    const loginLink = document.querySelector('#login-link');
+    const logout = document.querySelector('#logout')
+    const interval = setInterval(() => {
     if (expiredToken()){
-        alert("TOKEN EXPIRED!")
+        alert("TOKEN EXPIRED!")      
+        clearInterval(interval)
         window.location.href = 'index.html';
-        return null
+        loginLink.style.display = 'block';
+        logout.style.display = 'none';        
     }
 }, 5000)
-    }
+
     return token;
 }
 function expiredToken() {
    const ex = Number(localStorage.getItem("token_exp"));
    return Date.now() > ex;
 }
+function logout() {
+    document.cookie = "token=; Max-Age=0; path=/;";
+
+    localStorage.removeItem("token_exp");
+
+    window.location.href = "login.html";
+}
+const lgoutbttn = document.querySelector('#logout')
+if (lgoutbttn){
+document.querySelector('#logout').addEventListener('click', (e) => {
+    e.preventDefault();
+    logout();
+});}
 /* The checks are triggered when page detects an id */
 document.addEventListener("DOMContentLoaded", () => {
-    if (document.querySelector("#login-link")) {
-        login_checkAuthentication();
-    }
+    login_checkAuthentication();
+
+    
     if (document.querySelector("#place-details")) {
+        validation_checkAuthentication();
         place_checkAuthentication();
-    }
-    if (document.querySelector("#review-form")) {
-        review_checkAuthentication();;
     }
 });

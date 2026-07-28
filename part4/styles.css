@@ -2,7 +2,14 @@
   This is a SAMPLE File to get you started. Follow the instructions on the project to complete the tasks. 
   You'll probably need to override some of theese styles.
 */
+:root {
+    --font-color: #000000;
 
+    --card-margin: 20px;
+    --card-padding: 10px;
+    --card-border: 1px solid #ddd;
+    --card-radius: 10px;
+}
 * {
     box-sizing: border-box;
     margin: 0;
@@ -11,22 +18,141 @@
 }
 
 body {
-    background-color: #f4f4f4;
-    color: #333;
+    background-color: #3f5fa1;
+    color: var(--font-color);
 }
 
 header {
-    background-color: #333;
+    background-color: #000000;
     color: #fff;
     padding: 1rem;
 }
 
 nav a {
-    color: #fff;
+    color: #d01b1b;
     text-decoration: none;
     margin-left: 1rem;
 }
 
 main {
     padding: 2rem;
+}
+#register-form,
+#login-form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 300px;
+    margin: 0 auto;
+}
+
+#avail-places {
+    margin: 0 auto;
+    width: fit-content;
+}
+label[for="price-filter"] {
+    display: block;
+    width: max-content;
+    margin: 0 auto;
+}
+#price-filter {
+    display: block;
+    margin: 0 auto;
+}
+.review-card,
+.place-card {
+    margin: var(--card-margin);
+    padding: var(--card-padding);
+    border: var(--card-border);
+    border-radius: var(--card-radius); 
+}
+.place-details {
+    display: flex;
+    flex-direction: column;
+}
+.place-info {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+}
+.place-text {
+    width: 300px;
+    height: 120px;
+    margin: 10px auto;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 20px;
+    overflow: hidden;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.place-text p {
+    padding: 10px;
+}
+.place-info h1 {
+
+    margin: 10px auto;
+    padding: 20px; 
+
+}
+.place-amenities {
+    display: flex;
+    flex-direction: row; 
+    align-items: center;
+}
+.place-amenities ul {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    padding: 0;
+    margin: 10px;
+    list-style: none;
+}
+.place-amenities li::after {
+    content: ',';
+}
+
+.place-amenities li:last-child::after {
+    content: '';
+}
+.place-reviews {
+    flex-direction: column;
+    
+}
+#review {
+    width: 250px;
+    height: 60px;
+    padding: 10px;
+    border: 1px solid #5e5c5c;
+    background-color: #ffffff79;
+    border-radius: 10px;
+    resize: none;
+    font-size: 16px;
+    font-family: inherit;
+
+
+}
+#review-form {
+    display: flex;
+    flex-direction: column;
+}
+#rating {
+    display: flex;
+    flex-direction: column;
+}
+#review-form button[type="submit"] {
+    margin: 1rem -0rem;
+}
+#review-form h2{
+    margin: ;
+}
+footer {
+    text-align: center;
+    padding: 20px;
+    color: var(--font-color);
 }
